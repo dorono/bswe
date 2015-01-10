@@ -1,0 +1,325 @@
+@import "compass";
+@import "compass/css3";
+
+/* FONTS */
+$logo-font: SkinBones, sans-serif, Arial, Helvetica;
+$main-font: Cabin, Arial, sans-serif;
+
+/* FONT COLORS */
+$default-font-color: #000;
+$default-anchor-color: $default-font-color;
+$logo-text-color: #9CCFEE;
+$tagline-color: #fff; // white
+$text-color-2: #fff; // white
+
+/* BACKGROUND COLORS */
+$bgcolor-1: #fff; // white
+$bgcolor-2: #000; // black
+$bgcolor-3: #e2e2e2; // gray
+$bgcolor-4: $logo-text-color; // logo blue
+
+/* BREAKPOINTS */
+$large: 980px;
+$medium: 760px;
+$medium-small: 600px;
+$small: 480px;
+
+/* newsletter signup */
+$signup-hdr-bg: #000;
+$signup-hdr-color: #fff;
+
+/* MISC */
+$font-dir: '/wp-content/themes/responz/fonts/';
+$logo-tagline-width: 300px;
+$logo-tagline-width-narrow: 220px;
+$img-dir: '/wp-content/themes/responz/images/';
+$img-outline: #ccc;
+
+
+@media screen and (max-width: $medium-small) {
+    $logo-tagline-width: 220px;
+}
+
+@include font-face('SkinBones',
+    font-files(
+        $font-dir + 'skin__bones-webfont.woff', woff,
+        $font-dir + 'skin__bones-webfont.ttf', ttf,
+        $font-dir + 'skin__bones-webfont.svg', svg,
+        $font-dir + 'skin__bones-webfont.eot'
+    ),
+    normal,
+    normal
+);
+
+@include font-face('Cabin',
+        font-files(
+            $font-dir + 'cabin-regular-webfont.woff', woff,
+            $font-dir + 'cabin-regular-webfont.ttf', ttf,
+            $font-dir + 'cabin-regular-webfont.svg', svg,
+            $font-dir + 'cabin-regular-webfont.eot'
+        ),
+        normal,
+        normal
+);
+
+body {
+    //background-color: $logo-text-color;
+    background-image: none;
+    font-family: $main-font;
+
+    #contentwrap,
+    #sidebar {
+        padding-top: 0;
+    }
+
+    #content,
+    #sidebar,
+    #sidebar-alt {
+        padding-top: 10px;
+    }
+
+    #content {
+        background: $bgcolor-1;
+    }
+
+    #header-slider {
+        &.slider {
+            img {
+                border: 1px solid $img-outline;
+            }
+
+            .slide-post-title {
+                a {
+                    font: {
+                        family: $main-font;
+                        size: 14px;
+                    }
+                }
+            }
+        }
+
+
+    }
+
+    #headerwrap {
+        #header {
+            background: {
+                image: url($img-dir + 'bswe-sax.png');
+                repeat: no-repeat;
+            }
+            height: 172px;
+
+            hgroup {
+                padding-left: 66px;
+            }
+
+            #searchform-wrap {
+                @media screen and (max-width: $small) {
+                    position: relative;
+                }
+            }
+
+            #site-logo,
+            #site-description {
+                width: $logo-tagline-width;
+
+                @media screen and (max-width: $medium-small) {
+                    width: $logo-tagline-width-narrow;
+                }
+            }
+
+
+            #site-logo {
+                padding-top: 0;
+                top: 0;
+
+                a {
+                    color: $logo-text-color;
+                    font: {
+                        family: $logo-font;
+                        size: 44px;
+                        style: normal;
+                    }
+
+                    span {
+                        display: block;
+                        line-height: 1em;
+                    }
+
+                    @media screen and (max-width: $medium-small) {
+                        font-size: 38px;
+                    }
+                }
+            }
+
+            #site-description {
+                color: $tagline-color;
+                top: 94px;
+            }
+
+            .social-widget {
+                .rss {
+                    a {
+                        color: $text-color-2;
+                    }
+                }
+            }
+        }
+
+        #text-16 {
+            color: $tagline-color;
+            font-style: italic;
+            margin: 0 auto;
+            max-width: 970px;
+            padding: 10px 3% 0;
+
+            a {
+                color: $tagline-color;
+            }
+        }
+    }
+
+    #headerwrap {
+        background: $bgcolor-2;
+
+        #main-nav {
+            font-family: $main-font;
+
+            a {
+                color: $text-color-2;
+                min-height: 20px;
+            }
+
+            .current_page_item {
+                a {
+                    color: $text-color-2;
+                }
+            }
+        }
+
+        #top-nav {
+            float: right;
+            padding: 0;
+
+            li {
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    .homepage-signup,
+    .sidebar_newsletter {
+        padding: 10px;
+        background: $bgcolor-4;
+        border: solid 1px $bgcolor-2;
+        text-align: left;
+        margin-bottom: 15px;
+
+        em {
+            color: $default-font-color;
+        }
+
+        h3,
+        h4 {
+            font: {
+                family: $main-font;
+                style: normal;
+            }
+            margin: 0 0 15px;
+        }
+
+        h3 {
+            background: $signup-hdr-bg;
+            color: $signup-hdr-color;
+            font: {
+                size: 20px;
+                weight: bold;
+            }
+            padding: 10px;
+            line-height: 1em;
+        }
+
+        h4 {
+            font-size: 14px;
+        }
+
+        input[type=text] {
+            width: 400px;
+            font-size: 25px;
+            padding: 5px;
+            margin: 0 0 10px;
+        }
+
+        input[type=submit] {
+            color: #fff;
+            background-color: #2b7534;
+        }
+    }
+
+    .img-container {
+        border: 1px solid $img-outline;
+
+        @media screen and (min-width: $medium) {
+            max-height: 120px;
+            overflow: hidden;
+        }
+    }
+
+    .loops-wrapper.grid2 .post, 
+    .loops-wrapper.grid3 .post, 
+    .loops-wrapper.grid4 .post {
+        clear: none;
+        
+        .post-title {
+            clear: both;
+        }
+    }
+    
+    #nav-bar {
+        min-height: inherit;
+
+        ul {
+            @media screen and (max-width: $medium-small) {
+                display: none;
+            }
+        }
+
+        .jrsm-0 {
+            margin-bottom: 10px;
+            font-size: 16px;
+        }
+    }
+    
+    .post-author {
+        color: $default-anchor-color;
+        font: {
+            style: normal;
+            weight: bold;
+        }
+    }
+
+    .post-content {
+        @media screen and (max-width: $small) {
+            clear: both ;
+        }
+    }
+
+    #sidebar,
+    #sidebar-alt {
+        //background: $logo-text-color;
+        text-align: center;
+    }
+
+    #text-18 {
+        background: $bgcolor-3;
+
+        .banner728 {
+            margin: 0;
+            max-height: 90px;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+}
