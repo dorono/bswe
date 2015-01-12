@@ -306,7 +306,7 @@
 		border: none;
 		box-shadow: none;
 	}
-	#headerwrap #main-nav a, 
+	#headerwrap #main-nav a,
 	#headerwrap #main-nav ul a {
 		font: inherit;
 		text-transform: inherit;
@@ -319,12 +319,12 @@
 		text-shadow: none;
 		box-shadow: none;
 	}
-	#headerwrap #main-nav a:hover, 
+	#headerwrap #main-nav a:hover,
 	#headerwrap #main-nav ul a:hover {
 		background: none;
 		color: #000;
 	}
-	
+
 	/* dropdown */
 	#headerwrap #main-nav ul {
 		position: static;
@@ -336,7 +336,7 @@
 		border-radius: 0;
 		box-shadow: none;
 	}
-	
+
 	/************************************************************************************
 	SEARCH FORM
 	*************************************************************************************/

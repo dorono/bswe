@@ -690,6 +690,14 @@ add_action('wp_head', 'themify_ie_standards_compliant');
 			'before_title' => '<strong class="widgettitle">',
 			'after_title' => '</strong>',
 		));
+		register_sidebar(array(
+			'name' => __('Article Bottom Newsletter', 'themify'),
+			'id' => 'article-bottom-newsletter',
+			'before_widget' => '<div id="article-bottom-nl">',
+			'after_widget' => '</div>',
+			'before_title' => '',
+			'after_title' => '',
+		));
 	}
 
 	if( ! function_exists('themify_theme_add_sidebar_alt') ) {

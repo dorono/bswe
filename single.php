@@ -22,7 +22,9 @@ global $themify; ?>
 				<?php get_template_part( 'includes/loop'); ?>
 		
 				<?php wp_link_pages(array('before' => '<p class="post-pagination"><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
-					
+
+				<?php dynamic_sidebar('article-bottom-newsletter'); ?>
+
 				<?php get_template_part( 'includes/author-box', 'single'); ?>
 		
 				<?php get_template_part( 'includes/post-nav'); ?>

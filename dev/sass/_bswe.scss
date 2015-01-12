@@ -4,9 +4,10 @@
 /* FONTS */
 $logo-font: SkinBones, sans-serif, Arial, Helvetica;
 $main-font: Cabin, Arial, sans-serif;
+$serif-font: Arapey, "Times New Roman", Times, serif;
 
 /* FONT COLORS */
-$default-font-color: #000;
+$default-font-color: #333;
 $default-anchor-color: $default-font-color;
 $logo-text-color: #9CCFEE;
 $tagline-color: #fff; // white
@@ -17,12 +18,16 @@ $bgcolor-1: #fff; // white
 $bgcolor-2: #000; // black
 $bgcolor-3: #e2e2e2; // gray
 $bgcolor-4: $logo-text-color; // logo blue
+$bgcolor-5: #f2ee8b; // yellow
+$bgcolor-6: #929290; //dark gray
 
 /* BREAKPOINTS */
 $large: 980px;
+$medium-large: 850px;
 $medium: 760px;
 $medium-small: 600px;
-$small: 480px;
+$small: 520px;
+$smallest: 480px;
 
 /* newsletter signup */
 $signup-hdr-bg: #000;
@@ -34,6 +39,7 @@ $logo-tagline-width: 300px;
 $logo-tagline-width-narrow: 220px;
 $img-dir: '/wp-content/themes/responz/images/';
 $img-outline: #ccc;
+$general-outline: #000;
 
 
 @media screen and (max-width: $medium-small) {
@@ -63,9 +69,31 @@ $img-outline: #ccc;
 );
 
 body {
-    //background-color: $logo-text-color;
     background-image: none;
+    color: $default-font-color;
     font-family: $main-font;
+
+    h2,
+    h3,
+    h4,
+    h5 {
+        font: {
+            //family: $main-font;
+            //style: normal;
+            //weight: bold;
+        }
+    }
+    
+    #article-bottom-nl {
+        h2 {
+            border-top: 1px solid $general-outline;
+            font: {
+                family: $main-font;
+                style: normal;
+            }
+            padding: 5px 0 0;
+        }
+    }
 
     #contentwrap,
     #sidebar {
@@ -97,11 +125,11 @@ body {
                 }
             }
         }
-
-
     }
 
     #headerwrap {
+        background: $bgcolor-2;
+
         #header {
             background: {
                 image: url($img-dir + 'bswe-sax.png');
@@ -109,12 +137,16 @@ body {
             }
             height: 172px;
 
-            hgroup {
+            @media screen and (min-width: $small) {
+                border-bottom: none;
+            }
+
+                hgroup {
                 padding-left: 66px;
             }
 
             #searchform-wrap {
-                @media screen and (max-width: $small) {
+                @media screen and (max-width: $smallest) {
                     position: relative;
                 }
             }
@@ -164,6 +196,14 @@ body {
                     }
                 }
             }
+
+            #text-13 {
+                img {
+                    @media screen and (min-width: $medium) and (max-width: $medium-large) {
+                        max-width: 400px;
+                    }
+                }
+            }
         }
 
         #text-16 {
@@ -177,10 +217,6 @@ body {
                 color: $tagline-color;
             }
         }
-    }
-
-    #headerwrap {
-        background: $bgcolor-2;
 
         #main-nav {
             font-family: $main-font;
@@ -188,6 +224,15 @@ body {
             a {
                 color: $text-color-2;
                 min-height: 20px;
+
+                @media screen and (max-width: $smallest) {
+                    color: $default-anchor-color;
+                }
+
+                @media screen and (max-width: $small) {
+                    font-size: 13px;
+
+                }
             }
 
             .current_page_item {
@@ -210,7 +255,8 @@ body {
     }
 
     .homepage-signup,
-    .sidebar_newsletter {
+    .sidebar_newsletter,
+    .article-bottom-signup {
         padding: 10px;
         background: $bgcolor-4;
         border: solid 1px $bgcolor-2;
@@ -238,11 +284,17 @@ body {
                 weight: bold;
             }
             padding: 10px;
-            line-height: 1em;
+            line-height: 1.2em;
+
+            em {
+                color: $signup-hdr-color;
+            }
         }
 
         h4 {
             font-size: 14px;
+            padding: 5px;
+            border: 1px solid $general-outline;
         }
 
         input[type=text] {
@@ -259,24 +311,23 @@ body {
     }
 
     .img-container {
-        border: 1px solid $img-outline;
-
         @media screen and (min-width: $medium) {
             max-height: 120px;
             overflow: hidden;
+            margin-bottom: 5px;
         }
     }
 
-    .loops-wrapper.grid2 .post, 
-    .loops-wrapper.grid3 .post, 
+    .loops-wrapper.grid2 .post,
+    .loops-wrapper.grid3 .post,
     .loops-wrapper.grid4 .post {
         clear: none;
-        
+
         .post-title {
             clear: both;
         }
     }
-    
+
     #nav-bar {
         min-height: inherit;
 
@@ -291,7 +342,7 @@ body {
             font-size: 16px;
         }
     }
-    
+
     .post-author {
         color: $default-anchor-color;
         font: {
@@ -300,9 +351,13 @@ body {
         }
     }
 
-    .post-content {
-        @media screen and (max-width: $small) {
-            clear: both ;
+    .post {
+        margin-bottom: 0;
+
+        .post-content {
+            @media screen and (max-width: $smallest) {
+                clear: both ;
+            }
         }
     }
 
@@ -312,7 +367,7 @@ body {
         text-align: center;
     }
 
-    #text-18 {
+    #execphp-10 {
         background: $bgcolor-3;
 
         .banner728 {
@@ -320,6 +375,26 @@ body {
             max-height: 90px;
             text-align: center;
             padding: 10px;
+        }
+    }
+
+    .writer_promo {
+        background-color: $bgcolor-5;
+        padding: 10px;
+        border: $general-outline 1px solid;
+
+        h2 {
+            margin-top: 0;
+            font-family: $main-font;
+        }
+    }
+
+    .yarpp-related {
+        legend {
+            font: {
+                size: 18px;
+                weight: bold;
+            }
         }
     }
 }

@@ -16,96 +16,120 @@
   src: url('/fonts/normal?#iefix') format('embedded-opentype'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.woff) format('woff'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.ttf) format('truetype'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.svg) format('svg'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.eot) format('embedded-opentype');
   font-weight: normal;
 }
-/* line 65, ../../sass/_bswe.scss */
+/* line 71, ../../sass/_bswe.scss */
 body {
   background-image: none;
+  color: #333;
   font-family: Cabin, Arial, sans-serif;
 }
-/* line 70, ../../sass/_bswe.scss */
+/* line 88, ../../sass/_bswe.scss */
+body #article-bottom-nl h2 {
+  border-top: 1px solid #000;
+  font-family: Cabin, Arial, sans-serif;
+  font-style: normal;
+  padding: 5px 0 0;
+}
+/* line 98, ../../sass/_bswe.scss */
 body #contentwrap,
 body #sidebar {
   padding-top: 0;
 }
-/* line 75, ../../sass/_bswe.scss */
+/* line 103, ../../sass/_bswe.scss */
 body #content,
 body #sidebar,
 body #sidebar-alt {
   padding-top: 10px;
 }
-/* line 81, ../../sass/_bswe.scss */
+/* line 109, ../../sass/_bswe.scss */
 body #content {
   background: #fff;
 }
-/* line 87, ../../sass/_bswe.scss */
+/* line 115, ../../sass/_bswe.scss */
 body #header-slider.slider img {
   border: 1px solid #ccc;
 }
-/* line 92, ../../sass/_bswe.scss */
+/* line 120, ../../sass/_bswe.scss */
 body #header-slider.slider .slide-post-title a {
   font-family: Cabin, Arial, sans-serif;
   font-size: 14px;
 }
-/* line 105, ../../sass/_bswe.scss */
+/* line 130, ../../sass/_bswe.scss */
+body #headerwrap {
+  background: #000;
+}
+/* line 133, ../../sass/_bswe.scss */
 body #headerwrap #header {
   background-image: url("/wp-content/themes/responz/images/bswe-sax.png");
   background-repeat: no-repeat;
   height: 172px;
 }
-/* line 112, ../../sass/_bswe.scss */
+@media screen and (min-width: 520px) {
+  /* line 133, ../../sass/_bswe.scss */
+  body #headerwrap #header {
+    border-bottom: none;
+  }
+}
+/* line 144, ../../sass/_bswe.scss */
 body #headerwrap #header hgroup {
   padding-left: 66px;
 }
 @media screen and (max-width: 480px) {
-  /* line 116, ../../sass/_bswe.scss */
+  /* line 148, ../../sass/_bswe.scss */
   body #headerwrap #header #searchform-wrap {
     position: relative;
   }
 }
-/* line 122, ../../sass/_bswe.scss */
+/* line 154, ../../sass/_bswe.scss */
 body #headerwrap #header #site-logo,
 body #headerwrap #header #site-description {
   width: 300px;
 }
 @media screen and (max-width: 600px) {
-  /* line 122, ../../sass/_bswe.scss */
+  /* line 154, ../../sass/_bswe.scss */
   body #headerwrap #header #site-logo,
   body #headerwrap #header #site-description {
     width: 220px;
   }
 }
-/* line 132, ../../sass/_bswe.scss */
+/* line 164, ../../sass/_bswe.scss */
 body #headerwrap #header #site-logo {
   padding-top: 0;
   top: 0;
 }
-/* line 136, ../../sass/_bswe.scss */
+/* line 168, ../../sass/_bswe.scss */
 body #headerwrap #header #site-logo a {
   color: #9CCFEE;
   font-family: SkinBones, sans-serif, Arial, Helvetica;
   font-size: 44px;
   font-style: normal;
 }
-/* line 144, ../../sass/_bswe.scss */
+/* line 176, ../../sass/_bswe.scss */
 body #headerwrap #header #site-logo a span {
   display: block;
   line-height: 1em;
 }
 @media screen and (max-width: 600px) {
-  /* line 136, ../../sass/_bswe.scss */
+  /* line 168, ../../sass/_bswe.scss */
   body #headerwrap #header #site-logo a {
     font-size: 38px;
   }
 }
-/* line 155, ../../sass/_bswe.scss */
+/* line 187, ../../sass/_bswe.scss */
 body #headerwrap #header #site-description {
   color: #fff;
   top: 94px;
 }
-/* line 162, ../../sass/_bswe.scss */
+/* line 194, ../../sass/_bswe.scss */
 body #headerwrap #header .social-widget .rss a {
   color: #fff;
 }
-/* line 169, ../../sass/_bswe.scss */
+@media screen and (min-width: 760px) and (max-width: 850px) {
+  /* line 201, ../../sass/_bswe.scss */
+  body #headerwrap #header #text-13 img {
+    max-width: 400px;
+  }
+}
+/* line 209, ../../sass/_bswe.scss */
 body #headerwrap #text-16 {
   color: #fff;
   font-style: italic;
@@ -113,151 +137,192 @@ body #headerwrap #text-16 {
   max-width: 970px;
   padding: 10px 3% 0;
 }
-/* line 176, ../../sass/_bswe.scss */
+/* line 216, ../../sass/_bswe.scss */
 body #headerwrap #text-16 a {
   color: #fff;
 }
-/* line 182, ../../sass/_bswe.scss */
-body #headerwrap {
-  background: #000;
-}
-/* line 185, ../../sass/_bswe.scss */
+/* line 221, ../../sass/_bswe.scss */
 body #headerwrap #main-nav {
   font-family: Cabin, Arial, sans-serif;
 }
-/* line 188, ../../sass/_bswe.scss */
+/* line 224, ../../sass/_bswe.scss */
 body #headerwrap #main-nav a {
   color: #fff;
   min-height: 20px;
 }
-/* line 194, ../../sass/_bswe.scss */
+@media screen and (max-width: 480px) {
+  /* line 224, ../../sass/_bswe.scss */
+  body #headerwrap #main-nav a {
+    color: #333;
+  }
+}
+@media screen and (max-width: 520px) {
+  /* line 224, ../../sass/_bswe.scss */
+  body #headerwrap #main-nav a {
+    font-size: 13px;
+  }
+}
+/* line 239, ../../sass/_bswe.scss */
 body #headerwrap #main-nav .current_page_item a {
   color: #fff;
 }
-/* line 200, ../../sass/_bswe.scss */
+/* line 245, ../../sass/_bswe.scss */
 body #headerwrap #top-nav {
   float: right;
   padding: 0;
 }
-/* line 205, ../../sass/_bswe.scss */
+/* line 250, ../../sass/_bswe.scss */
 body #headerwrap #top-nav li:last-child {
   margin-right: 0;
 }
-/* line 212, ../../sass/_bswe.scss */
+/* line 257, ../../sass/_bswe.scss */
 body .homepage-signup,
-body .sidebar_newsletter {
+body .sidebar_newsletter,
+body .article-bottom-signup {
   padding: 10px;
   background: #9CCFEE;
   border: solid 1px #000;
   text-align: left;
   margin-bottom: 15px;
 }
-/* line 220, ../../sass/_bswe.scss */
+/* line 266, ../../sass/_bswe.scss */
 body .homepage-signup em,
-body .sidebar_newsletter em {
-  color: #000;
+body .sidebar_newsletter em,
+body .article-bottom-signup em {
+  color: #333;
 }
-/* line 224, ../../sass/_bswe.scss */
+/* line 270, ../../sass/_bswe.scss */
 body .homepage-signup h3,
 body .homepage-signup h4,
 body .sidebar_newsletter h3,
-body .sidebar_newsletter h4 {
+body .sidebar_newsletter h4,
+body .article-bottom-signup h3,
+body .article-bottom-signup h4 {
   font-family: Cabin, Arial, sans-serif;
   font-style: normal;
   margin: 0 0 15px;
 }
-/* line 233, ../../sass/_bswe.scss */
+/* line 279, ../../sass/_bswe.scss */
 body .homepage-signup h3,
-body .sidebar_newsletter h3 {
+body .sidebar_newsletter h3,
+body .article-bottom-signup h3 {
   background: #000;
   color: #fff;
   font-size: 20px;
   font-weight: bold;
   padding: 10px;
-  line-height: 1em;
+  line-height: 1.2em;
 }
-/* line 244, ../../sass/_bswe.scss */
+/* line 289, ../../sass/_bswe.scss */
+body .homepage-signup h3 em,
+body .sidebar_newsletter h3 em,
+body .article-bottom-signup h3 em {
+  color: #fff;
+}
+/* line 294, ../../sass/_bswe.scss */
 body .homepage-signup h4,
-body .sidebar_newsletter h4 {
+body .sidebar_newsletter h4,
+body .article-bottom-signup h4 {
   font-size: 14px;
+  padding: 5px;
+  border: 1px solid #000;
 }
-/* line 248, ../../sass/_bswe.scss */
+/* line 300, ../../sass/_bswe.scss */
 body .homepage-signup input[type=text],
-body .sidebar_newsletter input[type=text] {
+body .sidebar_newsletter input[type=text],
+body .article-bottom-signup input[type=text] {
   width: 400px;
   font-size: 25px;
   padding: 5px;
   margin: 0 0 10px;
 }
-/* line 255, ../../sass/_bswe.scss */
+/* line 307, ../../sass/_bswe.scss */
 body .homepage-signup input[type=submit],
-body .sidebar_newsletter input[type=submit] {
+body .sidebar_newsletter input[type=submit],
+body .article-bottom-signup input[type=submit] {
   color: #fff;
   background-color: #2b7534;
 }
-/* line 261, ../../sass/_bswe.scss */
-body .img-container {
-  border: 1px solid #ccc;
-}
 @media screen and (min-width: 760px) {
-  /* line 261, ../../sass/_bswe.scss */
+  /* line 313, ../../sass/_bswe.scss */
   body .img-container {
     max-height: 120px;
     overflow: hidden;
+    margin-bottom: 5px;
   }
 }
-/* line 270, ../../sass/_bswe.scss */
+/* line 321, ../../sass/_bswe.scss */
 body .loops-wrapper.grid2 .post,
 body .loops-wrapper.grid3 .post,
 body .loops-wrapper.grid4 .post {
   clear: none;
 }
-/* line 275, ../../sass/_bswe.scss */
+/* line 326, ../../sass/_bswe.scss */
 body .loops-wrapper.grid2 .post .post-title,
 body .loops-wrapper.grid3 .post .post-title,
 body .loops-wrapper.grid4 .post .post-title {
   clear: both;
 }
-/* line 280, ../../sass/_bswe.scss */
+/* line 331, ../../sass/_bswe.scss */
 body #nav-bar {
   min-height: inherit;
 }
 @media screen and (max-width: 600px) {
-  /* line 283, ../../sass/_bswe.scss */
+  /* line 334, ../../sass/_bswe.scss */
   body #nav-bar ul {
     display: none;
   }
 }
-/* line 289, ../../sass/_bswe.scss */
+/* line 340, ../../sass/_bswe.scss */
 body #nav-bar .jrsm-0 {
   margin-bottom: 10px;
   font-size: 16px;
 }
-/* line 295, ../../sass/_bswe.scss */
+/* line 346, ../../sass/_bswe.scss */
 body .post-author {
-  color: #000;
+  color: #333;
   font-style: normal;
   font-weight: bold;
 }
+/* line 354, ../../sass/_bswe.scss */
+body .post {
+  margin-bottom: 0;
+}
 @media screen and (max-width: 480px) {
-  /* line 303, ../../sass/_bswe.scss */
-  body .post-content {
+  /* line 357, ../../sass/_bswe.scss */
+  body .post .post-content {
     clear: both;
   }
 }
-/* line 309, ../../sass/_bswe.scss */
+/* line 364, ../../sass/_bswe.scss */
 body #sidebar,
 body #sidebar-alt {
   text-align: center;
 }
-/* line 315, ../../sass/_bswe.scss */
-body #text-18 {
+/* line 370, ../../sass/_bswe.scss */
+body #execphp-10 {
   background: #e2e2e2;
 }
-/* line 318, ../../sass/_bswe.scss */
-body #text-18 .banner728 {
+/* line 373, ../../sass/_bswe.scss */
+body #execphp-10 .banner728 {
   margin: 0;
   max-height: 90px;
   text-align: center;
   padding: 10px;
+}
+/* line 381, ../../sass/_bswe.scss */
+body .writer_promo {
+  background-color: #f2ee8b;
+  padding: 10px;
+  border: #000 1px solid;
+}
+/* line 386, ../../sass/_bswe.scss */
+body .writer_promo h2 {
+  margin-top: 0;
+  font-family: Cabin, Arial, sans-serif;
+}
+/* line 393, ../../sass/_bswe.scss */
+body .yarpp-related legend {
+  font-size: 18px;
+  font-weight: bold;
 }

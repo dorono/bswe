@@ -6,7 +6,7 @@
 global $themify; ?>
 
 <?php dynamic_sidebar('top-728x90-ad'); ?>
-<?php 	if (is_home() && !is_paged()) { get_template_part( 'includes/header-slider'); } ?>
+<?php if (is_home() && !is_paged()) { get_template_part( 'includes/header-slider'); } ?>
 
 <!-- layout-container -->
 <div id="layout" class="clearfix pagewidth">
@@ -111,7 +111,11 @@ global $themify; ?>
 						<?php else: ?>
 							<?php get_template_part( 'includes/loop','index'); ?>
 						<?php endif; ?>
-			
+
+
+						<?php $postnum++; if($postnum%3 == 0) { ?>
+							<!--YOUR AD CODE HERE-->
+						<?php } ?>
 					<?php endwhile; ?>
 								
 				</div>

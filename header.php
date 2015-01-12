@@ -34,9 +34,11 @@
 
 		<div id="nav-bar">
 			<div class="pagewidth clearfix">
-				<?php if (function_exists('wp_nav_menu')) {
-					wp_nav_menu(array('theme_location' => 'top-nav' , 'fallback_cb' => '' , 'container'  => '' , 'menu_id' => 'top-nav' , 'menu_class' => 'top-nav')); 
-				} ?>
+				<div class="nav-menu-container">
+					<?php if (function_exists('wp_nav_menu')) {
+						wp_nav_menu(array('theme_location' => 'top-nav' , 'fallback_cb' => '' , 'container'  => '' , 'menu_id' => 'top-nav' , 'menu_class' => 'top-nav'));
+					} ?>
+				</div>
 			</div>
 		</div>
 		<!-- /nav-bar -->
