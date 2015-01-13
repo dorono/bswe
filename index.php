@@ -113,9 +113,19 @@ global $themify; ?>
 						<?php endif; ?>
 
 
-						<?php $postnum++; if($postnum%3 == 0) { ?>
-							<!--YOUR AD CODE HERE-->
-						<?php } ?>
+						<?php
+
+							include "ad-array.php";
+							$postnum++;
+							if($postnum%2 == 0) {
+						?>
+								$adnum = 0;
+								<div class="mobile-ad">
+									<?php get_template_part( $wide_sidebar_ad_array[$adnum]); ?>
+								</div>
+								$adnum++;
+
+							<?php }  ?>
 					<?php endwhile; ?>
 								
 				</div>
