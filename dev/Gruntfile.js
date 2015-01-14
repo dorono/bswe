@@ -60,6 +60,15 @@ module.exports = function(grunt) {
             ]
         },
 
+        concat: {
+            scripts: {
+                files: {
+                    '<%= config.app %>/<%= config.jsDest %>/bswe.js': [
+                        '<%= config.jsSrc %>/main.js'
+                    ]
+                }
+            }
+        },
 
         uglify: {
             options: {
@@ -67,7 +76,7 @@ module.exports = function(grunt) {
             },
             my_target: {
                 files: {
-                    '<%= config.app %>/<%= config.jsDest %>/global.js': ['<%= config.app %>/<%= config.jsDest %>/global.js']
+                    '<%= config.app %>/<%= config.jsDest %>/bswe.js': ['<%= config.app %>/<%= config.jsDest %>/bswe.js']
                 }
             }
         },
@@ -118,6 +127,10 @@ module.exports = function(grunt) {
             },
             html: {
                 files: '<%= config.app %>/**/*.{html,php}'
+            },
+            scripts: {
+                files: '<%= config.jsSrc %>/**/*.js',
+                tasks: ['jshint', 'concat', 'copy:scripts']
             }
         }
     });
@@ -126,7 +139,7 @@ module.exports = function(grunt) {
         'clean:temp',
         'compass',
         'autoprefixer',
-        //'concat',
+        'concat',
         'copy',
         'jshint',
         'watch'
@@ -136,7 +149,7 @@ module.exports = function(grunt) {
         'clean:temp',
         'compass',
         'autoprefixer',
-        //'concat',
+        'concat',
         'uglify',
         'copy'
     ]);

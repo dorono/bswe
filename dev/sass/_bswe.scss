@@ -329,8 +329,13 @@ body {
     }
 
     .mobile-ad {
+        display: none;
         text-align: center;
         margin-bottom: 10px;
+
+        @media screen and (max-width: $smallest) {
+            display: block;
+        }
     }
 
     #nav-bar {
