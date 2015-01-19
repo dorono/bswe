@@ -101,7 +101,9 @@ global $themify; ?>
 			/////////////////////////////////////////////
 			?>
 			<?php if (have_posts()) : ?>
-			
+
+				<?php $adnum = 0; ?>
+
 				<!-- loops-wrapper -->
 				<div id="loops-wrapper" class="loops-wrapper <?php echo $themify->layout . ' ' . $themify->post_layout; ?>">
 
@@ -111,21 +113,6 @@ global $themify; ?>
 						<?php else: ?>
 							<?php get_template_part( 'includes/loop','index'); ?>
 						<?php endif; ?>
-
-
-						<?php
-
-							include "ad-array.php";
-							$postnum++;
-							if($postnum%2 == 0) {
-						?>
-								$adnum = 0;
-								<div class="mobile-ad">
-									<?php get_template_part( $wide_sidebar_ad_array[$adnum]); ?>
-								</div>
-								$adnum++;
-
-							<?php }  ?>
 					<?php endwhile; ?>
 								
 				</div>

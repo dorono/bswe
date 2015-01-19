@@ -47,10 +47,13 @@ function themify_theme_enqueue_scripts(){
 		'lightboxContext' => apply_filters('themify_lightbox_context', '#pagewrap'),
 		'isTouch' => themify_is_touch()? 'true': 'false',
 	));
-	
+
 	//WordPress internal script to move the comment box to the right place when replying to a user
 	if ( is_single() || is_page() ) wp_enqueue_script( 'comment-reply' );
-		
+
+	// Custom JS
+	wp_enqueue_script( 'bswe-scripts', get_template_directory_uri() . '/js/bswe.js', false, false, true);
+
 }
 
 /**

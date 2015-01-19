@@ -265,68 +265,75 @@ body .loops-wrapper.grid4 .post .post-title {
 }
 /* line 331, ../../sass/_bswe.scss */
 body .mobile-ad {
+  display: none;
   text-align: center;
   margin-bottom: 10px;
 }
-/* line 336, ../../sass/_bswe.scss */
+@media screen and (max-width: 480px) {
+  /* line 331, ../../sass/_bswe.scss */
+  body .mobile-ad {
+    display: block;
+  }
+}
+/* line 341, ../../sass/_bswe.scss */
 body #nav-bar {
   min-height: inherit;
 }
 @media screen and (max-width: 600px) {
-  /* line 339, ../../sass/_bswe.scss */
+  /* line 344, ../../sass/_bswe.scss */
   body #nav-bar ul {
     display: none;
   }
 }
-/* line 345, ../../sass/_bswe.scss */
+/* line 350, ../../sass/_bswe.scss */
 body #nav-bar .jrsm-0 {
   margin-bottom: 10px;
   font-size: 16px;
 }
-/* line 351, ../../sass/_bswe.scss */
+/* line 356, ../../sass/_bswe.scss */
 body .post-author {
   color: #333;
   font-style: normal;
   font-weight: bold;
 }
-/* line 359, ../../sass/_bswe.scss */
+/* line 364, ../../sass/_bswe.scss */
 body .post {
   margin-bottom: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 362, ../../sass/_bswe.scss */
+  /* line 367, ../../sass/_bswe.scss */
   body .post .post-content {
     clear: both;
   }
 }
-/* line 369, ../../sass/_bswe.scss */
+/* line 374, ../../sass/_bswe.scss */
 body #sidebar,
 body #sidebar-alt {
   text-align: center;
 }
-/* line 375, ../../sass/_bswe.scss */
+/* line 380, ../../sass/_bswe.scss */
 body #execphp-10 {
   background: #e2e2e2;
 }
-/* line 378, ../../sass/_bswe.scss */
+/* line 383, ../../sass/_bswe.scss */
 body #execphp-10 .banner728 {
   margin: 0;
   max-height: 90px;
   text-align: center;
   padding: 10px;
 }
-/* line 386, ../../sass/_bswe.scss */
+/* line 391, ../../sass/_bswe.scss */
 body .writer_promo {
   background-color: #f2ee8b;
   padding: 10px;
   border: #000 1px solid;
 }
-/* line 391, ../../sass/_bswe.scss */
+/* line 396, ../../sass/_bswe.scss */
 body .writer_promo h2 {
   margin-top: 0;
   font-family: Cabin, Arial, sans-serif;
 }
-/* line 398, ../../sass/_bswe.scss */
+/* line 403, ../../sass/_bswe.scss */
 body .yarpp-related legend {
   font-size: 18px;
   font-weight: bold;

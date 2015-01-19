@@ -19,5 +19,7 @@ $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 
-print "<a href=\"".$URL."\" target=\"_blank\" class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
+print "<div class=\"sidebar-ads\" data-ad-slot=\"ad-300x250-02\"><a href=\"".$URL."\" target=\"_blank\"
+class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
+height=\"250\"></a></div>";
 ?>
