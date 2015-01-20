@@ -254,6 +254,12 @@ body {
         }
     }
 
+    .hide-mobile {
+        @media screen and (max-width: $medium) {
+            display: none;
+        }
+    }
+
     .homepage-signup,
     .sidebar_newsletter,
     .article-bottom-signup {
@@ -328,6 +334,17 @@ body {
         }
     }
 
+    #loops-wrapper,
+    article {
+        .sidebar-ads {
+            margin-bottom: 10px;
+
+            @media screen and (min-width: $medium) {
+                display: none;
+            }            
+        }
+    }
+
     .mobile-ad {
         display: none;
         text-align: center;
@@ -366,7 +383,7 @@ body {
 
         .post-content {
             @media screen and (max-width: $smallest) {
-                clear: both ;
+                clear: both;
             }
         }
     }
@@ -375,6 +392,39 @@ body {
     #sidebar-alt {
         //background: $logo-text-color;
         text-align: center;
+    }
+
+    #sidebar {
+        .sidebar_newsletter {
+            @media screen and (max-width: $medium) {
+                display: none;
+            }
+        }
+    }
+
+    .sidebar-ads {
+        clear: both;
+        text-align: center;
+
+        img {
+            &.desktop-tablet-ad-img,
+            &.mobile-ad-img {
+                display: none;
+            }
+
+            &.desktop-tablet-ad-img {
+                @media screen and (min-width: $medium) {
+                    display: inline-block;
+                }
+            }
+
+            &.mobile-ad-img {
+                @media screen and (max-width: $medium) {
+                    display: inline-block;
+                }
+            }
+        }
+
     }
 
     #execphp-10 {

@@ -1,71 +1,113 @@
 (function($) {
 
-    var indivAdObj = {},
-        adArray = [];
+    var BSWE = BSWE || {};
 
-    // randomize the array
-    function shuffle(array) {
-        var m = array.length, t, i;
+    BSWE.applySkipClass = function (list) {
+        $.each(list, function(index , item) {
+            var currentSelector = item;
 
-        // While there remain elements to shuffle…
-        while (m) {
+            console.log('item: ' + item);
 
-            // Pick a remaining element…
-            i = Math.floor(Math.random() * m--);
+            $(currentSelector).each(function() {
+               $(this).addClass('skip');
+            });
+        });
+    };
 
-            // And swap it with the current element.
-            t = array[m];
-            array[m] = array[i];
-            array[i] = t;
+    BSWE.distributeAds = function(settings) {
+        var adArray = [];
+
+        console.log(settings.adDivider + ' ' + settings.frequency + ' ' + settings.contentContainer);
+
+        // randomize the array
+        function shuffle(array) {
+            var m = array.length, t, i;
+
+            // While there remain elements to shuffle...
+            while (m) {
+                // Pick a remaining element…
+                i = Math.floor(Math.random() * m--);
+
+                // And swap it with the current element.
+                t = array[m];
+                array[m] = array[i];
+                array[i] = t;
+            }
+
+            return array;
         }
 
-        return array;
-    }
+        $('.sidebar-ads').each(function () {
+            console.log('this is the parent id: ' + $(this).parents('.ad-container').attr('id'));
 
-    $('.sidebar-ads').each(function() {
-        console.log('this is the parent id: ' + $(this).parents('.ad-container').attr('id'));
-
-        // get all ads
-        adArray.push({
-            adSlot: $(this).data('ad-slot'),
-            adContainer: $(this).parents('.ad-container').attr('id')
+            // put all ads into an array
+            adArray.push({
+                adSlot: $(this).data('ad-slot'),
+                adContainer: $(this).parents('.ad-container').attr('id')
+            });
         });
 
-        // put the data-ad-slot value and the container into an array as an object literal
+        var shuffledAdArray = shuffle(adArray),
+            adIdentifier,
+            currentAd,
+            adNum = 0,
+            contentContainer = settings.contentContainer, // '#loops-wrapper',
+            adParent,
+            sourceAd;
 
 
+        console.log('skip? : ' + settings.adDivider);
 
-        // space the ads into the content, hiding the sidebar versions, letting the rest fall to the bottom
+        $(contentContainer).find(settings.adDivider).each(function (index) {
+            console.log('content container: ' + contentContainer);
+
+            if ((index + 1) % settings.frequency === 0) {
+                adIdentifier = shuffledAdArray[adNum].adSlot;
+                adParent = shuffledAdArray[adNum].adContainer;
+
+                console.log('ad parent: ' + adParent);
+
+                currentAd = '.sidebar-ads[data-ad-slot=' + adIdentifier + ']';
+                sourceAd = $('#' + adParent).find(currentAd);
+
+                sourceAd.clone().insertAfter(contentContainer + ' '+ settings.adDivider + ':eq(' + index + ')');
+
+                // swap out skyscraper ads for 300px ads at mobile view
+                /*if (adParent === 'sidebar-alt') {
+                    var skyScraperSrc = $(contentContainer).find($(currentAd)).find('img').attr('src');
+
+                    skyScraperSrc = skyScraperSrc.replace('multiwidth-120' , 'multiwidth-300');
+
+                    $(contentContainer).find($(currentAd)).find('img').attr('src' , skyScraperSrc);
+                }*/
+
+                sourceAd.parents('.widgetwrap').addClass('hide-mobile');
+
+                adNum++;
+            }
+        });
+    };
 
 
-    });
+    // list of elements that should not be counted
+    // as part of the distribution of ads in content
+    BSWE.skipList = ['.writer_promo p'];
 
-    var shuffledAdArray = shuffle(adArray);
+    // Feed the skip list to a function that adds the skip class to
+    // the elements to be skipped.
+    BSWE.applySkipClass(BSWE.skipList);
 
-    console.log(shuffledAdArray);
-
-
-
-    var currentAd,
-        adNum = 0,
-        articleContainer = '#loops-wrapper',
-        // sidebarContainer = '#sidebar',
-        adParent;
-
-    // count # pairs of ads
-
-    $(articleContainer).find('article').each(function(index) {
-
-        console.log('index: ' + index);
-
-        if((index + 1) % 2 === 0) {
-            currentAd = shuffledAdArray[adNum].adSlot;
-            adParent = shuffledAdArray[adNum].adContainer;
-            console.log('current ad: ' + currentAd + ' | ad parent:' + adParent);
-
-            $('#' + adParent).find('.sidebar-ads[data-ad-slot=' + currentAd + ']').clone().insertAfter(articleContainer + ' article:eq(' + index + ')');
-            adNum++;
-        }
-    });
-
+    if($('body').hasClass('grid2')) {
+        BSWE.distributeAds({
+            contentContainer: '#loops-wrapper',
+            adDivider: 'article',
+            frequency: 2
+        });
+    } else if($('body').hasClass('single-format-standard')) {
+        BSWE.distributeAds({
+            contentContainer: 'article',
+            adDivider: 'p:not(.skip)',
+            frequency: 4
+        });
+    }
 })(jQuery);

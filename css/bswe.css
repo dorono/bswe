@@ -175,7 +175,13 @@ body #headerwrap #top-nav {
 body #headerwrap #top-nav li:last-child {
   margin-right: 0;
 }
-/* line 257, ../../sass/_bswe.scss */
+@media screen and (max-width: 760px) {
+  /* line 257, ../../sass/_bswe.scss */
+  body .hide-mobile {
+    display: none;
+  }
+}
+/* line 263, ../../sass/_bswe.scss */
 body .homepage-signup,
 body .sidebar_newsletter,
 body .article-bottom-signup {
@@ -185,13 +191,13 @@ body .article-bottom-signup {
   text-align: left;
   margin-bottom: 15px;
 }
-/* line 266, ../../sass/_bswe.scss */
+/* line 272, ../../sass/_bswe.scss */
 body .homepage-signup em,
 body .sidebar_newsletter em,
 body .article-bottom-signup em {
   color: #333;
 }
-/* line 270, ../../sass/_bswe.scss */
+/* line 276, ../../sass/_bswe.scss */
 body .homepage-signup h3,
 body .homepage-signup h4,
 body .sidebar_newsletter h3,
@@ -202,7 +208,7 @@ body .article-bottom-signup h4 {
   font-style: normal;
   margin: 0 0 15px;
 }
-/* line 279, ../../sass/_bswe.scss */
+/* line 285, ../../sass/_bswe.scss */
 body .homepage-signup h3,
 body .sidebar_newsletter h3,
 body .article-bottom-signup h3 {
@@ -213,13 +219,13 @@ body .article-bottom-signup h3 {
   padding: 10px;
   line-height: 1.2em;
 }
-/* line 289, ../../sass/_bswe.scss */
+/* line 295, ../../sass/_bswe.scss */
 body .homepage-signup h3 em,
 body .sidebar_newsletter h3 em,
 body .article-bottom-signup h3 em {
   color: #fff;
 }
-/* line 294, ../../sass/_bswe.scss */
+/* line 300, ../../sass/_bswe.scss */
 body .homepage-signup h4,
 body .sidebar_newsletter h4,
 body .article-bottom-signup h4 {
@@ -227,7 +233,7 @@ body .article-bottom-signup h4 {
   padding: 5px;
   border: 1px solid #000;
 }
-/* line 300, ../../sass/_bswe.scss */
+/* line 306, ../../sass/_bswe.scss */
 body .homepage-signup input[type=text],
 body .sidebar_newsletter input[type=text],
 body .article-bottom-signup input[type=text] {
@@ -236,7 +242,7 @@ body .article-bottom-signup input[type=text] {
   padding: 5px;
   margin: 0 0 10px;
 }
-/* line 307, ../../sass/_bswe.scss */
+/* line 313, ../../sass/_bswe.scss */
 body .homepage-signup input[type=submit],
 body .sidebar_newsletter input[type=submit],
 body .article-bottom-signup input[type=submit] {
@@ -244,96 +250,135 @@ body .article-bottom-signup input[type=submit] {
   background-color: #2b7534;
 }
 @media screen and (min-width: 760px) {
-  /* line 313, ../../sass/_bswe.scss */
+  /* line 319, ../../sass/_bswe.scss */
   body .img-container {
     max-height: 120px;
     overflow: hidden;
     margin-bottom: 5px;
   }
 }
-/* line 321, ../../sass/_bswe.scss */
+/* line 327, ../../sass/_bswe.scss */
 body .loops-wrapper.grid2 .post,
 body .loops-wrapper.grid3 .post,
 body .loops-wrapper.grid4 .post {
   clear: none;
 }
-/* line 326, ../../sass/_bswe.scss */
+/* line 332, ../../sass/_bswe.scss */
 body .loops-wrapper.grid2 .post .post-title,
 body .loops-wrapper.grid3 .post .post-title,
 body .loops-wrapper.grid4 .post .post-title {
   clear: both;
 }
-/* line 331, ../../sass/_bswe.scss */
+/* line 339, ../../sass/_bswe.scss */
+body #loops-wrapper .sidebar-ads,
+body article .sidebar-ads {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 760px) {
+  /* line 339, ../../sass/_bswe.scss */
+  body #loops-wrapper .sidebar-ads,
+  body article .sidebar-ads {
+    display: none;
+  }
+}
+/* line 348, ../../sass/_bswe.scss */
 body .mobile-ad {
   display: none;
   text-align: center;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
-  /* line 331, ../../sass/_bswe.scss */
+  /* line 348, ../../sass/_bswe.scss */
   body .mobile-ad {
     display: block;
   }
 }
-/* line 341, ../../sass/_bswe.scss */
+/* line 358, ../../sass/_bswe.scss */
 body #nav-bar {
   min-height: inherit;
 }
 @media screen and (max-width: 600px) {
-  /* line 344, ../../sass/_bswe.scss */
+  /* line 361, ../../sass/_bswe.scss */
   body #nav-bar ul {
     display: none;
   }
 }
-/* line 350, ../../sass/_bswe.scss */
+/* line 367, ../../sass/_bswe.scss */
 body #nav-bar .jrsm-0 {
   margin-bottom: 10px;
   font-size: 16px;
 }
-/* line 356, ../../sass/_bswe.scss */
+/* line 373, ../../sass/_bswe.scss */
 body .post-author {
   color: #333;
   font-style: normal;
   font-weight: bold;
 }
-/* line 364, ../../sass/_bswe.scss */
+/* line 381, ../../sass/_bswe.scss */
 body .post {
   margin-bottom: 0;
 }
 @media screen and (max-width: 480px) {
-  /* line 367, ../../sass/_bswe.scss */
+  /* line 384, ../../sass/_bswe.scss */
   body .post .post-content {
     clear: both;
   }
 }
-/* line 374, ../../sass/_bswe.scss */
+/* line 391, ../../sass/_bswe.scss */
 body #sidebar,
 body #sidebar-alt {
   text-align: center;
 }
-/* line 380, ../../sass/_bswe.scss */
+@media screen and (max-width: 760px) {
+  /* line 398, ../../sass/_bswe.scss */
+  body #sidebar .sidebar_newsletter {
+    display: none;
+  }
+}
+/* line 405, ../../sass/_bswe.scss */
+body .sidebar-ads {
+  clear: both;
+  text-align: center;
+}
+/* line 410, ../../sass/_bswe.scss */
+body .sidebar-ads img.desktop-tablet-ad-img, body .sidebar-ads img.mobile-ad-img {
+  display: none;
+}
+@media screen and (min-width: 760px) {
+  /* line 415, ../../sass/_bswe.scss */
+  body .sidebar-ads img.desktop-tablet-ad-img {
+    display: inline-block;
+  }
+}
+@media screen and (max-width: 760px) {
+  /* line 421, ../../sass/_bswe.scss */
+  body .sidebar-ads img.mobile-ad-img {
+    display: inline-block;
+  }
+}
+/* line 430, ../../sass/_bswe.scss */
 body #execphp-10 {
   background: #e2e2e2;
 }
-/* line 383, ../../sass/_bswe.scss */
+/* line 433, ../../sass/_bswe.scss */
 body #execphp-10 .banner728 {
   margin: 0;
   max-height: 90px;
   text-align: center;
   padding: 10px;
 }
-/* line 391, ../../sass/_bswe.scss */
+/* line 441, ../../sass/_bswe.scss */
 body .writer_promo {
   background-color: #f2ee8b;
   padding: 10px;
   border: #000 1px solid;
 }
-/* line 396, ../../sass/_bswe.scss */
+/* line 446, ../../sass/_bswe.scss */
 body .writer_promo h2 {
   margin-top: 0;
   font-family: Cabin, Arial, sans-serif;
 }
-/* line 403, ../../sass/_bswe.scss */
+/* line 453, ../../sass/_bswe.scss */
 body .yarpp-related legend {
   font-size: 18px;
   font-weight: bold;
