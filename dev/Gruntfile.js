@@ -64,7 +64,8 @@ module.exports = function(grunt) {
             scripts: {
                 files: {
                     '<%= config.app %>/<%= config.jsDest %>/bswe.js': [
-                        '<%= config.jsSrc %>/main.js'
+                        '<%= config.jsSrc %>/main.js',
+                        '<%= config.jsSrc %>/ga.js'
                     ]
                 }
             }

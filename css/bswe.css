@@ -378,7 +378,11 @@ body .writer_promo h2 {
   margin-top: 0;
   font-family: Cabin, Arial, sans-serif;
 }
-/* line 453, ../../sass/_bswe.scss */
+/* line 451, ../../sass/_bswe.scss */
+body .writer_promo h4 {
+  margin: 0;
+}
+/* line 457, ../../sass/_bswe.scss */
 body .yarpp-related legend {
   font-size: 18px;
   font-weight: bold;

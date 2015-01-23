@@ -69,18 +69,7 @@
 
                 currentAd = '.sidebar-ads[data-ad-slot=' + adIdentifier + ']';
                 sourceAd = $('#' + adParent).find(currentAd);
-
                 sourceAd.clone().insertAfter(contentContainer + ' '+ settings.adDivider + ':eq(' + index + ')');
-
-                // swap out skyscraper ads for 300px ads at mobile view
-                /*if (adParent === 'sidebar-alt') {
-                    var skyScraperSrc = $(contentContainer).find($(currentAd)).find('img').attr('src');
-
-                    skyScraperSrc = skyScraperSrc.replace('multiwidth-120' , 'multiwidth-300');
-
-                    $(contentContainer).find($(currentAd)).find('img').attr('src' , skyScraperSrc);
-                }*/
-
                 sourceAd.parents('.widgetwrap').addClass('hide-mobile');
 
                 adNum++;

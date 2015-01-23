@@ -16,6 +16,6 @@ $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 
-print "<div class=\"sidebar-ads\" data-ad-slot=\"ad-300x120-01\"><a href=\"".$URL."\" target=\"_blank\"
+print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x120-01\"><a href=\"".$URL."\" target=\"_blank\"
 class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
 ?>
