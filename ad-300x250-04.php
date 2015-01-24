@@ -6,11 +6,13 @@ $Img5 = get_bloginfo('url') . "/wp-content/uploads/abelet-xn.jpg";
 $Alt5 = "Abelet";
 $Url5 = "http://www.abelet.com/";
 $class5 = "abelet_300x250_position3_banner";
+$slot_name5 = "Abelet 300x250";
 
 $Img6 = get_bloginfo('url') . "/wp-content/uploads/SaxDakota_BannerAd300x250_4.jpg";
 $Alt6 = "Dakota";
 $Url6 = "http://www.saxdakota.com/";
 $class6 = "dakota_position3_banner";
+$slot_name6 = "Antigua 300x250";
 
 $num = rand (5,6);
 
@@ -18,8 +20,10 @@ $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $class = ${'class'.$num};
+$slot_name = ${'slot_name'.$num};
+
 
 print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-04\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
+class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
 height=\"250\"></a></div>";
 ?>
