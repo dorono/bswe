@@ -18,7 +18,7 @@ global $themify; ?>
 			<!-- content -->
 			<div id="content" class="list-post">
             	<?php themify_content_start(); //hook ?>
-				
+
 				<?php get_template_part( 'includes/loop'); ?>
 		
 				<?php wp_link_pages(array('before' => '<p class="post-pagination"><strong>Pages:</strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>

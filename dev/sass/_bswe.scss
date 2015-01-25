@@ -110,6 +110,29 @@ body {
         background: $bgcolor-1;
     }
 
+    #execphp-10 {
+        background: $bgcolor-3;
+
+        .banner728 {
+            margin: 0;
+            max-height: 90px;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+
+    footer {
+        .col3-1 {
+            height: 75px;
+
+            #social-widget-3 {
+                h4 {
+                    text-align: right;
+                }
+            }
+        }
+    }
+
     #header-slider {
         &.slider {
             img {
@@ -424,17 +447,21 @@ body {
                 }
             }
         }
-
     }
 
-    #execphp-10 {
-        background: $bgcolor-3;
+    .social_icons {
+        margin-bottom: 10px;
 
-        .banner728 {
-            margin: 0;
-            max-height: 90px;
-            text-align: center;
-            padding: 10px;
+        p {
+            position: relative;
+
+            span {
+                font-size: 17px;
+                position: absolute;
+                left: 99px;
+                top: 6px;
+
+            }
         }
     }
 

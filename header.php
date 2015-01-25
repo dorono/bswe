@@ -21,6 +21,8 @@
 <!-- wp_header -->
 <?php wp_head(); ?>
 
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+
 </head>
 
 <body <?php body_class(); ?>>

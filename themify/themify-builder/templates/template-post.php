@@ -2,7 +2,7 @@
 if ( ! defined( 'ABSPATH' ) ) exit; // Exit if accessed directly
 /**
  * Template Post
- * 
+ *
  * Access original fields: $mod_settings
  * @author Themify
  */
@@ -30,14 +30,14 @@ $fields_default = array(
 	'css_post' => ''
 );
 
-if ( isset( $mod_settings['category_post'] ) )	
+if ( isset( $mod_settings['category_post'] ) )
 	$mod_settings['category_post'] = $this->get_param_value( $mod_settings['category_post'] );
 
 $fields_args = wp_parse_args( $mod_settings, $fields_default );
 extract( $fields_args, EXTR_SKIP );
 $animation_effect = $this->parse_animation_effect( $animation_effect );
 
-$container_class = implode(' ', 
+$container_class = implode(' ',
 	apply_filters('themify_builder_module_classes', array(
 		'module', 'module-' . $mod_name, $module_ID, 'loops-wrapper', 'clearfix', $css_post, $layout_post
 	) )
@@ -50,10 +50,10 @@ $this->add_post_class( $animation_effect );
 	<?php if ( $mod_title_post != '' ): ?>
 	<h3 class="module-title"><?php echo $mod_title_post; ?></h3>
 	<?php endif; ?>
-	
+
 	<?php
 	do_action( 'themify_builder_before_template_content_render' );
-	
+
 	// The Query
 	global $paged, $wp;
 	$order = $order_post;
@@ -98,7 +98,7 @@ $this->add_post_class( $animation_effect );
 
 	// add offset posts
 	if ( $offset_post != '' ) {
-		if ( empty( $limit ) ) 
+		if ( empty( $limit ) )
 			$limit = get_option('posts_per_page');
 
 		$args['offset'] = ( ( $paged - 1 ) * $limit ) + $offset_post;
@@ -121,7 +121,7 @@ $this->add_post_class( $animation_effect );
 		$themify->height = $img_height_post;
 		$themify->image_setting = 'ignore=true&';
 		$themify->is_builder_loop = true;
-		if ( $this->is_img_php_disabled() ) 
+		if ( $this->is_img_php_disabled() )
 			$themify->image_setting .= $image_size_post != '' ? 'image_size=' . $image_size_post . '&' : '';
 		$themify->unlink_title = $unlink_post_title_post;
 		$themify->display_content = $display_post;
@@ -136,7 +136,7 @@ $this->add_post_class( $animation_effect );
 		if ($posts) {
 			$out .= themify_get_shortcode_template($posts);
 		}
-		
+
 		// revert to original $themify state
 		$themify = clone $themify_save;
 		echo $out;
@@ -148,31 +148,31 @@ $this->add_post_class( $animation_effect );
 		<?php themify_post_before(); // hook ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class("post clearfix"); ?>>
-			
+
 			<?php themify_post_start(); // hook ?>
-			
+
 			<?php
 			if ( $hide_feat_img_post != 'yes' ) {
 				$width = $img_width_post;
 				$height = $img_height_post;
 				$param_image = 'w='.$width .'&h='.$height.'&ignore=true';
-				if ( $this->is_img_php_disabled() ) 
+				if ( $this->is_img_php_disabled() )
 					$param_image .= $image_size_post != '' ? '&image_size=' . $image_size_post : '';
 
 				//check if there is a video url in the custom field
 				if( themify_get('video_url') != '' ){
 					global $wp_embed;
-					
+
 					themify_before_post_image(); // Hook
-					
+
 					echo $wp_embed->run_shortcode('[embed]' . themify_get('video_url') . '[/embed]');
-					
+
 					themify_after_post_image(); // Hook
-					
+
 				} elseif ( $post_image = themify_get_image( $param_image ) ) {
-					
+
 					themify_before_post_image(); // Hook ?>
-					
+
 					<figure class="post-image">
 						<?php if ( $unlink_feat_img_post == 'yes' ): ?>
 							<?php echo $post_image; ?>
@@ -180,14 +180,14 @@ $this->add_post_class( $animation_effect );
 							<a href="<?php echo themify_get_featured_image_link(); ?>"><?php echo $post_image; ?></a>
 						<?php endif; ?>
 					</figure>
-					
+
 					<?php themify_after_post_image(); // Hook
-				} 
+				}
 			}
 			?>
 
 			<div class="post-content">
-			
+
 				<?php if ( $hide_post_date_post != 'yes' ): ?>
 					<time datetime="<?php the_time('o-m-d') ?>" class="post-date" pubdate><?php the_date( apply_filters( 'themify_loop_date', '' ) ) ?></time>
 				<?php endif; //post date ?>
@@ -199,11 +199,11 @@ $this->add_post_class( $animation_effect );
 					<?php else: ?>
 						<h1 class="post-title"><a href="<?php echo themify_get_featured_image_link(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></h1>
 					<?php endif; //unlink post title ?>
-					<?php themify_after_post_title(); // Hook ?> 
-				<?php endif; //post title ?>    
+					<?php themify_after_post_title(); // Hook ?>
+				<?php endif; //post title ?>
 
 				<?php if ( $hide_post_meta_post != 'yes' ): ?>
-					<p class="post-meta"> 
+					<p class="post-meta">
 						<span class="post-author">By <?php the_author_posts_link() ?></span>
 						<span class="post-category"><?php the_category(', ') ?></span>
 						<?php the_tags(' <span class="post-tag">', ', ', '</span>'); ?>
@@ -211,32 +211,32 @@ $this->add_post_class( $animation_effect );
 							<!--<span class="post-comment"><?php /*comments_popup_link( __( '0 Comments', 'themify' ), __( '1 Comment', 'themify' ), __( '% Comments', 'themify' ) ); */?></span>-->
 						<?php //endif; //post comment ?>
 					</p>
-				<?php endif; //post meta ?>    
-				
+				<?php endif; //post meta ?>
+
 				<?php
 				// fix the issue more link doesn't output
 				global $more;
 				$more = 0;
 				?>
-				
+
 				<?php if ( $display_post == 'excerpt' ): ?>
-			
+
 					<?php the_excerpt(); ?>
-			
+
 				<?php elseif ( $display_post == 'none' ): ?>
-			
+
 				<?php else: ?>
 
 					<?php the_content(themify_check('setting-default_more_text')? themify_get('setting-default_more_text') : __('More &rarr;', 'themify')); ?>
-				
+
 				<?php endif; //display content ?>
-				
+
 				<?php edit_post_link(__('Edit', 'themify'), '[', ']'); ?>
-				
+
 			</div>
 			<!-- /.post-content -->
 			<?php themify_post_end(); // hook ?>
-			
+
 		</article>
 		<?php themify_post_after(); // hook ?>
 
