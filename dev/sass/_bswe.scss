@@ -36,7 +36,7 @@ $signup-hdr-color: #fff;
 /* MISC */
 $font-dir: '/wp-content/themes/responz/fonts/';
 $logo-tagline-width: 300px;
-$logo-tagline-width-narrow: 220px;
+$logo-tagline-width-narrow: 212px;
 $img-dir: '/wp-content/themes/responz/images/';
 $img-outline: #ccc;
 $general-outline: #000;
@@ -303,6 +303,7 @@ body {
                 style: normal;
             }
             margin: 0 0 15px;
+            background: none;
         }
 
         h3 {
@@ -418,6 +419,33 @@ body {
     }
 
     #sidebar {
+        .widget_recent_comments {
+            a {
+                font-style: italic;
+                text-decoration: underline;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+            h4 {
+                background: $bgcolor-2;
+                color: $text-color-2;
+                font: {
+                    family: $main-font;
+                    size: 18px;
+                    weight: bold;
+                }
+                line-height: 1em;
+                padding: 7px;
+            }
+
+            li {
+                text-align: left;
+            }
+        }
+
         .sidebar_newsletter {
             @media screen and (max-width: $medium) {
                 display: none;
@@ -462,6 +490,77 @@ body {
                 top: 6px;
 
             }
+        }
+    }
+
+    .widget_taxonomy_list_widget {
+        position: relative;
+
+        h4 {
+            background: $bgcolor-2;
+            color: $text-color-2;
+            cursor: pointer;
+            font: {
+                family: $main-font;
+                size: 18px;
+                weight: bold;
+            }
+            padding: 10px;
+            line-height: 1em;
+            text-align: left;
+
+            @media screen and (min-width: $medium) {
+                font-size: 14px;
+            }
+
+            @media screen and (min-width: $medium) and (max-width: $medium-large) {
+                text-align: center;
+            }
+        }
+
+        span {
+            cursor: pointer;
+            width: 0;
+            height: 0;
+            position: absolute;
+            right: 10px;
+
+            &.open {
+                border-left: 12px solid transparent;
+                border-right: 12px solid transparent;
+                border-top: 12px solid $text-color-2;
+                top: 13px;
+
+                @media screen and (min-width: $medium) {
+                    border-left-width: 7px;
+                    border-right-width: 7px;
+                    border-top-width: 7px;
+                    top: 12px;
+                }
+            }
+
+            &.closed {
+                border-top: 12px solid transparent;
+                border-bottom: 12px solid transparent;
+                border-left: 12px solid $text-color-2;
+                top: 6px;
+
+                @media screen and (min-width: $medium) {
+                    border-top-width: 7px;
+                    border-bottom-width: 7px;
+                    border-left-width: 7px;
+                    top: 8px;
+                }
+            }
+
+            @media screen and (min-width: $medium) and (max-width: $medium-large) {
+                display: none;
+            }            
+        }
+        
+        
+        ul {
+            display: none;
         }
     }
 

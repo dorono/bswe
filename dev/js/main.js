@@ -99,4 +99,21 @@
             frequency: 4
         });
     }
+
+    // slide toggle topics widget
+    BSWE.topicsWidget = $('.widget_taxonomy_list_widget');
+    BSWE.topicsWidgetHdr = BSWE.topicsWidget.find('h4');
+    BSWE.topicsWidget.prepend('<span class=\'open\'></span>');
+
+    BSWE.topicsWidget.on('click', 'h4, span', function() {
+        BSWE.topicsWidget.find('ul').slideToggle();
+        BSWE.topicsWidget.find('span').toggleClass('closed');
+
+        if(BSWE.topicsWidgetHdr.text() === 'Hide Topics') {
+            BSWE.topicsWidgetHdr.text('View Topics');
+        } else {
+            BSWE.topicsWidgetHdr.text('Hide Topics');
+        }
+    });
+
 })(jQuery);
