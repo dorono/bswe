@@ -1,14 +1,14 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/placeholder-multiwidth";
-$Alt1 = "";
-$Url1 = "";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/bsp-multiwidth";
+$Alt1 = "Bulletproof Saxophone Playing";
+$Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class1 = "bsp-narrow-sidebar";
 $slot_name1 = "Placeholder 1";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/placeholder-multiwidth";
-$Alt2 = "";
-$Url2 = "";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-multiwidth";
+$Alt2 = "Bulletproof Saxophone Playing";
+$Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class2 = "bsp-narrow-sidebar";
 $slot_name2 = "Placeholder 2";
 

@@ -144,6 +144,7 @@ body {
                     font: {
                         family: $main-font;
                         size: 14px;
+                        weight: bold;
                     }
                 }
             }
@@ -341,10 +342,20 @@ body {
     }
 
     .img-container {
-        @media screen and (min-width: $medium) {
-            max-height: 120px;
-            overflow: hidden;
-            margin-bottom: 5px;
+        max-height: 120px;
+        overflow: hidden;
+        margin-bottom: 5px;
+
+        @media screen and (max-width: $smallest) {
+            text-align: center;
+        }
+
+        figure {
+            &.left {
+                @media screen and (max-width: $smallest) {
+                    float: none;
+                }
+            }
         }
     }
 
