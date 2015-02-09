@@ -84,14 +84,8 @@ global $themify; ?>
 			?>
 			<?php if( !is_search() ): ?>
 				<?php
-				if(is_front_page()) {
-					$postOffset = 5;
-				} else {
-					$postOffset = 0;
-				}
-
 				global $query_string;
-				query_posts( apply_filters( 'themify_query_posts_args', $query_string.'&order='.$themify->order.'&orderby='.$themify->orderby.'&offset='.$postOffset ) );
+				query_posts( apply_filters( 'themify_query_posts_args', $query_string.'&order='.$themify->order.'&orderby='.$themify->orderby ) );
 				?>
 			<?php endif; ?>
 	
@@ -101,8 +95,6 @@ global $themify; ?>
 			/////////////////////////////////////////////
 			?>
 			<?php if (have_posts()) : ?>
-
-				<?php $adnum = 0; ?>
 
 				<!-- loops-wrapper -->
 				<div id="loops-wrapper" class="loops-wrapper <?php echo $themify->layout . ' ' . $themify->post_layout; ?>">

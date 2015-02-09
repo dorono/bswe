@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/placeholder-multiwidth";
-$Alt1 = "";
-$Url1 = "";
-$class1 = "placeholder-3";
-$slot_name1 = "Placeholder 3";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/saxlife-multiwidth";
+$Alt1 = "Saxophone Life";
+$Url1 = "http://www.saxophonelife.com/?utm_source=bswe%20banner&utm_medium=banner&utm_content=Feb%202015&utm_campaign=BSWE%20Banner";
+$class1 = "saxophone-life-120-ad";
+$slot_name1 = "Sax Life 120 Slot 2";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/placeholder-multiwidth";
-$Alt2 = "";
-$Url2 = "";
-$class2 = "placeholder-4";
-$slot_name2 = "Placeholder 4";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/saxlife-multiwidth";
+$Alt2 = "Saxophone Life";
+$Url2 = "http://www.saxophonelife.com/?utm_source=bswe%20banner&utm_medium=banner&utm_content=Feb%202015&utm_campaign=BSWE%20Banner";
+$class2 = "saxophone-life-120-ad";
+$slot_name2 = "Sax Life 120 Slot 2";
 
 $num = rand (1,2);
 
