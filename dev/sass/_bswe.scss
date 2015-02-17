@@ -73,15 +73,9 @@ body {
     color: $default-font-color;
     font-family: $main-font;
 
-    h2,
-    h3,
-    h4,
-    h5 {
-        font: {
-            //family: $main-font;
-            //style: normal;
-            //weight: bold;
-        }
+    p {
+        font-size: 14px;
+        line-height: 1.5em;
     }
     
     #article-bottom-nl {

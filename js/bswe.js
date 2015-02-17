@@ -61,15 +61,15 @@
         $(contentContainer).find(settings.adDivider).each(function (index) {
             console.log('content container: ' + contentContainer);
 
-            if ((index + 1) % settings.frequency === 0) {
+            if ((index + 1) % settings.frequency === 0 && $('.widgetwrap .sidebar-ads').length > adNum) {
                 adIdentifier = shuffledAdArray[adNum].adSlot;
                 adParent = shuffledAdArray[adNum].adContainer;
 
-                console.log('ad parent: ' + adParent);
+                console.log('number of ad slots: ' + $('.widgetwrap .sidebar-ads').length);
 
                 currentAd = '.sidebar-ads[data-ad-slot=' + adIdentifier + ']';
                 sourceAd = $('#' + adParent).find(currentAd);
-                sourceAd.clone().insertAfter(contentContainer + ' '+ settings.adDivider + ':eq(' + index + ')');
+                sourceAd.clone().insertAfter(contentContainer + ' '+ settings.adDivider + ':eq(' + index + ')').prepend('<div class=\'sponsored\'>Sponsored</div>');
                 sourceAd.parents('.widgetwrap').addClass('hide-mobile');
 
                 adNum++;
