@@ -12,7 +12,7 @@ $Img6 = get_bloginfo('url') . "/wp-content/uploads/SaxDakota_BannerAd300x250_4.j
 $Alt6 = "Dakota";
 $Url6 = "http://www.saxdakota.com/";
 $class6 = "dakota_position3_banner";
-$slot_name6 = "Antigua 300x250";
+$slot_name6 = "Sax Dakota 300x250";
 
 $num = rand (5,6);
 

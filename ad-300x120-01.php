@@ -5,19 +5,22 @@
 $Img9= get_bloginfo('url') . "/wp-content/uploads/claude-lakey-compass.jpg";
 $Alt9= "Claude Lakey";
 $Url9= "http://www.claudelakey.com/products/compass";
-$slot_name9 = "Claude Lakey 300x120 Sidebar";
+$class9 = "Claude-Lakey-Banner";
+$slot_name9 = "Claude Lakey Sidebar";
 
 
 $Img10 = get_bloginfo('url') . "/wp-content/uploads/Melodic-Minor-bannerBSWE.jpg";
 $Alt10 = "Melodic Minor Jazz Studies";
 $Url10 = "http://billplakemusic.org/my-books/melodic-minor-landing-page/";
-$slot_name10 = "Bill Plake 300x120 Sidebar";
+$class10 = "Bill-Plake-Banner";
+$slot_name10 = "Bill Plake Sidebar";
 
 $num = rand (9,10);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
+$class = ${'class'.$num};
 $slot_name = ${'slot_name'.$num};
 
 

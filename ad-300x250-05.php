@@ -1,21 +1,21 @@
 <?php
 
-// ADS 7 & 8
+// ADS 9 & 10
 
-$Img7 = get_bloginfo('url') . "/wp-content/uploads/select_jazz_mouthpiece_300x250.png";
-$Alt7 = "D'Addario Select Jazz";
-$Url7 = "http://www.woodwinds.daddario.com/woodwindsMedia.Page?ActiveID=2953&MediaId=10234&utm_source=BestSaxWebsiteEver&utm_medium=300x250Banner&utm_campaign=SelectJazz";
-$class7 = "daddario_300x250_banner";
-$slot_name7 = "D'Addario 300x250";
-
-$Img8 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
-$Alt8 = "Trevor James Signature Custom Raw Saxophone";
-$Url8 = "http://massullomusic.com/trevor-james-signature-custom-raw-saxophones/";
-$class8 = "massullo";
-$slot_name8 = "Massullo Music 300x250 Ad";
+$Img9 = get_bloginfo('url') . "/wp-content/uploads/lakey-BSWEad.jpg";
+$Alt9 = "Claude Lakey";
+$Url9 = "http://www.claudelakey.com/products/compass";
+$class9 = "Claude-Lakey-Banner";
+$slot_name9 = "Claude Lakey Sidebar";
 
 
-$num = rand (7,8);
+$Img10 = get_bloginfo('url') . "/wp-content/uploads/lakey-BSWEad.jpg";
+$Alt10 = "Claude Lakey";
+$Url10 = "http://www.claudelakey.com/products/compass";
+$class10 = "Claude-Lakey-Banner";
+$slot_name10 = "Claude Lakey Sidebar";
+
+$num = rand (9,10);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
@@ -23,7 +23,7 @@ $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 $slot_name = ${'slot_name'.$num};
 
+
 print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-05\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
-height=\"250\"></a></div>";
+class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
 ?>
