@@ -423,7 +423,8 @@ body {
         text-align: center;
     }
 
-    #sidebar {
+    #sidebar,
+    #sidebar-alt {
         .widget_recent_comments {
             a {
                 font-style: italic;
@@ -434,7 +435,13 @@ body {
                 }
             }
 
-            h4 {
+            li {
+                text-align: left;
+            }
+        }
+
+        h4 {
+            &.widgettitle {
                 background: $bgcolor-2;
                 color: $text-color-2;
                 font: {
@@ -444,10 +451,6 @@ body {
                 }
                 line-height: 1em;
                 padding: 7px;
-            }
-
-            li {
-                text-align: left;
             }
         }
 
@@ -498,6 +501,7 @@ body {
         }
     }
 
+    /* this is for the accordion menu, out of commission for now
     .widget_taxonomy_list_widget {
         position: relative;
 
@@ -567,7 +571,7 @@ body {
         ul {
             display: none;
         }
-    }
+    }*/
 
     .writer_promo {
         background-color: $bgcolor-5;

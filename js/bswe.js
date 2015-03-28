@@ -100,7 +100,9 @@
         });
     }
 
-    // slide toggle topics widget
+    // slide toggle topics widget, keeping this functionality
+    // out of commission for the time-being
+    /*
     BSWE.topicsWidget = $('.widget_taxonomy_list_widget');
     BSWE.topicsWidgetHdr = BSWE.topicsWidget.find('h4');
     BSWE.topicsWidget.prepend('<span class=\'open\'></span>');
@@ -115,6 +117,7 @@
             BSWE.topicsWidgetHdr.text('Hide Topics');
         }
     });
+    */
 
 })(jQuery);
 

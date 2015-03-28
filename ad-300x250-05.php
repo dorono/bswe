@@ -2,18 +2,18 @@
 
 // ADS 9 & 10
 
-$Img9 = get_bloginfo('url') . "/wp-content/uploads/lakey-BSWEad.jpg";
-$Alt9 = "Claude Lakey";
-$Url9 = "http://www.claudelakey.com/products/compass";
+$Img9 = get_bloginfo('url') . "/wp-content/uploads/claude-lakey.jpg";
+$Alt9 = "Claude Lakey Ivry Reeds";
+$Url9 = "http://www.claudelakey.com/collections/ivry-reeds";
 $class9 = "Claude-Lakey-Banner";
 $slot_name9 = "Claude Lakey Sidebar";
 
 
-$Img10 = get_bloginfo('url') . "/wp-content/uploads/lakey-BSWEad.jpg";
-$Alt10 = "Claude Lakey";
-$Url10 = "http://www.claudelakey.com/products/compass";
-$class10 = "Claude-Lakey-Banner";
-$slot_name10 = "Claude Lakey Sidebar";
+$Img10 = get_bloginfo('url') . "/wp-content/uploads/reed-geek.jpg";
+$Alt10 = "Reed Geek";
+$Url10 = "http://www.reedgeek.com/";
+$class10 = "Reed-Geek-Banner";
+$slot_name10 = "Reed Geek Sidebar";
 
 $num = rand (9,10);
 
