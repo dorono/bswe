@@ -75,7 +75,9 @@
 
 			<div class="social-widget">
 				<?php dynamic_sidebar('social-widget'); ?>
-	
+
+				<a id="advertise-link" href="<?php bloginfo('url')?>/advertise-with-us/">Advertise on the site!</a>
+
 				<?php if(!themify_check('setting-exclude_rss')): ?>
 					<div class="rss"><a href="<?php if(themify_get('setting-custom_feed_url') != ""){ echo themify_get('setting-custom_feed_url'); } else { echo bloginfo('rss2_url'); } ?>">RSS</a></div>
 				<?php endif ?>

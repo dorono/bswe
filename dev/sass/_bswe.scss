@@ -159,8 +159,14 @@ body {
                 border-bottom: none;
             }
 
-                hgroup {
+            hgroup {
                 padding-left: 66px;
+            }
+
+            a {
+                &#advertise-link {
+                    color: $bgcolor-4;
+                }
             }
 
             #searchform-wrap {
@@ -414,6 +420,10 @@ body {
             @media screen and (max-width: $smallest) {
                 clear: both;
             }
+
+            li {
+                font-size: 14px;
+            }
         }
     }
 
@@ -589,6 +599,10 @@ body {
     }
 
     .yarpp-related {
+        a {
+            font-weight: normal;
+        }
+        
         legend {
             font: {
                 size: 18px;

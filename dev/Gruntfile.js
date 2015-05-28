@@ -56,6 +56,7 @@ module.exports = function(grunt) {
             },
             all: [
                 '<%= config.jsSrc %>/{,*/}*.js',
+                '!<%= config.jsSrc %>/ga.js',
                 '!<%= config.app %>/<%= config.jsSrc %>/global.js'
             ]
         },

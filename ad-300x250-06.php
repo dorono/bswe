@@ -2,11 +2,11 @@
 
 // ADS 7 & 8
 
-$Img7 = get_bloginfo('url') . "/wp-content/uploads/select_jazz_mouthpiece_300x250.png";
-$Alt7 = "D'Addario Select Jazz";
-$Url7 = "http://www.woodwinds.daddario.com/woodwindsMedia.Page?ActiveID=2953&MediaId=10234&utm_source=BestSaxWebsiteEver&utm_medium=300x250Banner&utm_campaign=SelectJazz";
-$class7 = "daddario_300x250_banner";
-$slot_name7 = "D'Addario 300x250";
+$Img7 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
+$Alt7 = "Trevor James Signature Custom Raw Saxophone";
+$Url7 = "http://massullomusic.com/trevor-james-signature-custom-raw-saxophones/";
+$class7 = "massullo";
+$slot_name7 = "Massullo Music 300x250 Ad";
 
 $Img8 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
 $Alt8 = "Trevor James Signature Custom Raw Saxophone";
