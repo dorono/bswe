@@ -1,18 +1,18 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/saxlife-multiwidth";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/improvise-multiwidth";
 $Alt1 = "Saxophone Life";
-$Url1 = "http://www.saxophonelife.com/?utm_source=bswe%20banner&utm_medium=banner&utm_content=Feb%202015&utm_campaign=BSWE%20Banner";
-$class1 = "saxophone-life-120-ad";
-$slot_name1 = "Sax Life 120 Slot 2";
+$Url1 = "https://improviseforreal.com/welcome-sax/";
+$class1 = "improvise-for-real-ad-1";
+$slot_name1 = "Improvise for Real - Ad #1";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/saxlife-multiwidth";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/improvise-multiwidth";
 $Alt2 = "Saxophone Life";
-$Url2 = "http://www.saxophonelife.com/?utm_source=bswe%20banner&utm_medium=banner&utm_content=Feb%202015&utm_campaign=BSWE%20Banner";
-$class2 = "saxophone-life-120-ad";
-$slot_name2 = "Sax Life 120 Slot 2";
+$Url2 = "https://improviseforreal.com/welcome-sax/";
+$class2 = "improvise-for-real-ad-1";
+$slot_name2 = "Improvise for Real - Ad #1";
 
-$num = rand (1,2);
+$num = mt_rand(1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};

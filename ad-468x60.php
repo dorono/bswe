@@ -2,17 +2,17 @@
 
 // ADS 1 & 2
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/V16_metal_BSWE-2.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/Vandoren_jazzmix.jpg";
 $Alt1 = "Vandoren";
-$Url1 = "http://dansr.com/vandoren/products/293/318";
+$Url1 = "http://dansr.com/vandoren/products/225/407/";
 $class1 = "vandoren_468x60";
-$slot_name1 = "Vandoren Ad In Header";
+$slot_name1 = "Vandoren Jazzmix ";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/Sticky-Pads-Banner-Final.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/sticky-pads-orange.jpg";
 $Alt2 = "Sticky Pads Remedy";
 $Url2 = "http://www.stickypadsremedy.com/";
-$class2 = "sticky-pads-remedy-468x60";
-$slot_name2 = "10mFan 350";
+$class2 = "sticky-pads-remedy-468x60-orange";
+$slot_name2 = "Sticky Pads Remedy - Orange Banner";
 
 
 $num = rand (1,2);

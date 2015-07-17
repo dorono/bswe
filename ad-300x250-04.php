@@ -2,19 +2,19 @@
 
 // ADS 5 & 6
 
-$Img5 = get_bloginfo('url') . "/wp-content/uploads/abelet-xn.jpg";
-$Alt5 = "Abelet";
-$Url5 = "http://www.abelet.com/";
-$class5 = "abelet_300x250_position3_banner";
-$slot_name5 = "Abelet 300x250";
+$Img0 = get_bloginfo('url') . "/wp-content/uploads/hinoki-CM2.jpg";
+$Alt0 = "Forestone Reeds";
+$Url0 = "http://www.forestone-japan.com/index.php/alto-saxophone-reeds/";
+$class0 = "forestone_300x250_banner";
+$slot_name0 = "Forestone 300x250";
 
-$Img6 = get_bloginfo('url') . "/wp-content/uploads/SaxDakota_BannerAd300x250_4.jpg";
-$Alt6 = "Dakota";
-$Url6 = "http://www.saxdakota.com/";
-$class6 = "dakota_position3_banner";
-$slot_name6 = "Sax Dakota 300x250";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/abelet-xn.jpg";
+$Alt1 = "Abelet";
+$Url1 = "http://www.abelet.com/";
+$class1 = "abelet_300x250_position3_banner";
+$slot_name1 = "Abelet 300x250";
 
-$num = rand (5,6);
+$num = mt_rand (0,1);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};

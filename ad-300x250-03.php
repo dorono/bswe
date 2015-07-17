@@ -2,11 +2,11 @@
 
 //ADS 3 & 4
 
-$Img3 = get_bloginfo('url') . "/wp-content/uploads/BSWE-Side-Ad-4.jpg";
-$Alt3 = "Theo Wanne";
-$Url3 = "http://www.theowanne.com/";
-$class3 = "theo_wanne_300x250_position2_banner";
-$slot_name3 = "Theo Wanne Banner Position 2";
+$Img3 = get_bloginfo('url') . "/wp-content/uploads/just_joes.jpg";
+$Alt3 = "Just Joe's Sax Gel Strap";
+$Url3 = "http://justjoessaxgelstrap.com";
+$class3 = "just_joes_position2";
+$slot_name3 = "Just Joes 300x250 bottom";
 
 $Img4 = get_bloginfo('url') . "/wp-content/uploads/just_joes.jpg";
 $Alt4 = "Just Joe's Sax Gel Strap";

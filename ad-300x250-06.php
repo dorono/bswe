@@ -2,20 +2,20 @@
 
 // ADS 7 & 8
 
-$Img7 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
-$Alt7 = "Trevor James Signature Custom Raw Saxophone";
-$Url7 = "http://massullomusic.com/trevor-james-signature-custom-raw-saxophones/";
-$class7 = "massullo";
-$slot_name7 = "Massullo Music 300x250 Ad";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/Master-97.jpg";
+$Alt1 = "P. Mauriat Master 97 ";
+$Url1 = "http://www.pmauriatmusic.com";
+$class1 = "p.mauriat-master-97";
+$slot_name1 = "P. Mauriat Master 97";
 
-$Img8 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
-$Alt8 = "Trevor James Signature Custom Raw Saxophone";
-$Url8 = "http://massullomusic.com/trevor-james-signature-custom-raw-saxophones/";
-$class8 = "massullo";
-$slot_name8 = "Massullo Music 300x250 Ad";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
+$Alt2 = "Trevor James Signature Custom Raw Saxophone";
+$Url2 = "http://massullomusic.com/trevor-james-signature-custom-raw-saxophones/";
+$class2 = "massullo";
+$slot_name2 = "Massullo Music 300x250 Ad";
 
 
-$num = rand (7,8);
+$num = mt_rand(1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};

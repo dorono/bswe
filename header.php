@@ -23,6 +23,24 @@
 
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 
+	<?php //For Facebook to create custom audience out of my website visitors ?>
+	<script>(function() {
+			var _fbq = window._fbq || (window._fbq = []);
+			if (!_fbq.loaded) {
+				var fbds = document.createElement('script');
+				fbds.async = true;
+				fbds.src = '//connect.facebook.net/en_US/fbds.js';
+				var s = document.getElementsByTagName('script')[0];
+				s.parentNode.insertBefore(fbds, s);
+				_fbq.loaded = true;
+			}
+			_fbq.push(['addPixelId', '909075279152522']);
+		})();
+		window._fbq = window._fbq || [];
+		window._fbq.push(['track', 'PixelInitialized', {}]);
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=909075279152522&amp;ev=PixelInitialized" /></noscript>
+
 </head>
 
 <body <?php body_class(); ?>>
@@ -76,7 +94,7 @@
 			<div class="social-widget">
 				<?php dynamic_sidebar('social-widget'); ?>
 
-				<a id="advertise-link" href="<?php bloginfo('url')?>/advertise-with-us/">Advertise on the site!</a>
+				<!--<a id="advertise-link" href="<?php /*bloginfo('url')*/?>/advertise-with-us/">Advertise on the site!</a>-->
 
 				<?php if(!themify_check('setting-exclude_rss')): ?>
 					<div class="rss"><a href="<?php if(themify_get('setting-custom_feed_url') != ""){ echo themify_get('setting-custom_feed_url'); } else { echo bloginfo('rss2_url'); } ?>">RSS</a></div>
