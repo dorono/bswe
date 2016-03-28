@@ -8,11 +8,11 @@ $Url0 = "http://www.forestone-japan.com/index.php/alto-saxophone-reeds/";
 $class0 = "forestone_300x250_banner";
 $slot_name0 = "Forestone 300x250";
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/abelet-xn.jpg";
-$Alt1 = "Abelet";
-$Url1 = "http://www.abelet.com/";
-$class1 = "abelet_300x250_position3_banner";
-$slot_name1 = "Abelet 300x250";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/hinoki-CM2.jpg";
+$Alt1 = "Forestone Reeds";
+$Url1 = "http://www.forestone-japan.com/index.php/alto-saxophone-reeds/";
+$class1 = "forestone_300x250_banner";
+$slot_name1 = "Forestone 300x250";
 
 $num = mt_rand (0,1);
 

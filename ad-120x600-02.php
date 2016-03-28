@@ -1,16 +1,16 @@
 <?php
 
 $Img1 = get_bloginfo('url') . "/wp-content/uploads/improvise-multiwidth";
-$Alt1 = "Saxophone Life";
+$Alt1 = "Improvise for Real";
 $Url1 = "https://improviseforreal.com/welcome-sax/";
-$class1 = "improvise-for-real-ad-1";
-$slot_name1 = "Improvise for Real - Ad #1";
+$class1 = "improvise-for-real-ad-2";
+$slot_name1 = "Improvise for Real - Ad #2";
 
 $Img2 = get_bloginfo('url') . "/wp-content/uploads/improvise-multiwidth";
-$Alt2 = "Saxophone Life";
+$Alt2 = "Improvise for Real";
 $Url2 = "https://improviseforreal.com/welcome-sax/";
-$class2 = "improvise-for-real-ad-1";
-$slot_name2 = "Improvise for Real - Ad #1";
+$class2 = "improvise-for-real-ad-2";
+$slot_name2 = "Improvise for Real - Ad #2";
 
 $num = mt_rand(1,2);
 

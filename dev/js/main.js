@@ -1,7 +1,6 @@
 (function($) {
-
     var BSWE = BSWE || {};
-
+    console.log('13333 effff');
     BSWE.applySkipClass = function (list) {
         $.each(list, function(index , item) {
             var currentSelector = item;

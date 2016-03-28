@@ -8,11 +8,11 @@ $Url3 = "http://justjoessaxgelstrap.com";
 $class3 = "just_joes_position2";
 $slot_name3 = "Just Joes 300x250 bottom";
 
-$Img4 = get_bloginfo('url') . "/wp-content/uploads/just_joes.jpg";
-$Alt4 = "Just Joe's Sax Gel Strap";
-$Url4 = "http://justjoessaxgelstrap.com";
-$class4 = "just_joes_position2";
-$slot_name4 = "Just Joes 300x250 bottom";
+$Img4 = get_bloginfo('url') . "/wp-content/uploads/reed-booster.jpg";
+$Alt4 = "Reed Booster";
+$Url4 = "http://www.bravoreeds.net/introducing-reed-booster/";
+$class4 = "Reed Booster";
+$slot_name4 = "Bravo Reeds";
 
 
 $num = rand (3,4);

@@ -132,7 +132,7 @@ module.exports = function(grunt) {
             },
             scripts: {
                 files: '<%= config.jsSrc %>/**/*.js',
-                tasks: ['jshint', 'concat', 'copy:scripts']
+                tasks: ['jshint', 'concat']
             }
         }
     });
