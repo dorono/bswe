@@ -61,7 +61,7 @@
 							return;
 						}
 					});
-				} 
+				}
 			}
 		},
 
@@ -191,22 +191,22 @@
 			var self = this;
 
 			// Smooth Scroll and Link Highlight
-			$( this.options.context ).find( 'a[href*=#]' ).not( 'a[href=#]' ).on( 'click', function (e) {
-				// Build class to scroll to
-				var href = $(this).prop('hash'),
-					classToScroll = href.replace(/#/, self.options.prefix);
-
-				// If the section exists in this page
-				if ( 1 == $(classToScroll).length ) {
-					// Set state
-					self.scrolling = true;
-					// Perform scroll
-					self.linkScroll( classToScroll, href );
-					// Avoid link behaviour
-					e.preventDefault();
-				}
-			});
-			$('#wpadminbar').find('a').off('click');
+			// $( this.options.context ).find( 'a[href*=#]' ).not( 'a[href=#]' ).on( 'click', function (e) {
+			// 	// Build class to scroll to
+			// 	var href = $(this).prop('hash'),
+			// 		classToScroll = href.replace(/#/, self.options.prefix);
+			//
+			// 	// If the section exists in this page
+			// 	if ( 1 == $(classToScroll).length ) {
+			// 		// Set state
+			// 		self.scrolling = true;
+			// 		// Perform scroll
+			// 		self.linkScroll( classToScroll, href );
+			// 		// Avoid link behaviour
+			// 		e.preventDefault();
+			// 	}
+			// });
+			// $('#wpadminbar').find('a').off('click');
 
 
 			// Highlight Link when scroll over element

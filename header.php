@@ -24,22 +24,20 @@
 	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
 
 	<?php //For Facebook to create custom audience out of my website visitors ?>
-	<script>(function() {
-			var _fbq = window._fbq || (window._fbq = []);
-			if (!_fbq.loaded) {
-				var fbds = document.createElement('script');
-				fbds.async = true;
-				fbds.src = '//connect.facebook.net/en_US/fbds.js';
-				var s = document.getElementsByTagName('script')[0];
-				s.parentNode.insertBefore(fbds, s);
-				_fbq.loaded = true;
-			}
-			_fbq.push(['addPixelId', '909075279152522']);
-		})();
-		window._fbq = window._fbq || [];
-		window._fbq.push(['track', 'PixelInitialized', {}]);
-	</script>
-	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=909075279152522&amp;ev=PixelInitialized" /></noscript>
+	<!-- Facebook Pixel Code -->
+	<script>
+	!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+	n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+	n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+	t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+	document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+	fbq('init', '909075279152522');
+	fbq('track', "PageView");</script>
+	<noscript><img height="1" width="1" style="display:none"
+	src="https://www.facebook.com/tr?id=909075279152522&ev=PageView&noscript=1"
+	/></noscript>
+	<!-- End Facebook Pixel Code -->
 
 </head>
 
@@ -66,20 +64,20 @@
 		<?php themify_header_before(); //hook ?>
 		<header id="header" class="pagewidth">
         	<?php themify_header_start(); //hook ?>
-		
+
 			<hgroup>
 				<?php echo themify_logo_image('site_logo'); ?>
-	
+
 				<?php if ( $site_desc = get_bloginfo( 'description' ) ) : ?>
 					<?php global $themify_customizer; ?>
 					<div id="site-description" class="site-description"><?php echo class_exists( 'Themify_Customizer' ) ? $themify_customizer->site_description( $site_desc ) : $site_desc; ?></div>
 				<?php endif; ?>
 			</hgroup>
-	
+
 			<div class="header-widget">
 				<?php dynamic_sidebar('header-widget'); ?>
 			</div>
-			<!--/header widget --> 
+			<!--/header widget -->
 
 			<?php if(!themify_check('setting-exclude_search_form')): ?>
 				<div id="searchform-wrap">
@@ -119,7 +117,7 @@
 					}
 					?>
                 </nav>
-		<!-- /#main-nav -->		
+		<!-- /#main-nav -->
 	</div>
             <!-- /#main-nav-wrap -->
 
@@ -127,9 +125,9 @@
 		</header>
 		<!-- /#header -->
         <?php themify_header_after(); //hook ?>
-				
+
 	</div>
 	<!-- /#headerwrap -->
-	
-	<div id="body" class="clearfix"> 
+
+	<div id="body" class="clearfix">
 	<?php themify_layout_before(); //hook ?>

@@ -9,10 +9,10 @@ $class9 = "Claude-Lakey-Banner-Sax-And-Mouthpiece-Photo";
 $slot_name9 = "Claude Lakey Sidebar";
 
 
-$Img10 = get_bloginfo('url') . "/wp-content/uploads/ReedGeek_Sanborn_WEB.jpg";
+$Img10 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
 $Alt10 = "Reed Geek";
 $Url10 = "http://www.reedgeek.com/";
-$class10 = "Reed-Geek-Banner";
+$class10 = "Reed-Geek-Black-Diamond";
 $slot_name10 = "Reed Geek Sidebar - Sanborn";
 
 $num = rand (9,10);

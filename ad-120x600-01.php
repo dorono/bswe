@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/bsp-multiwidth";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth";
 $Alt1 = "Bulletproof Saxophone Playing";
 $Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class1 = "bsp-narrow-sidebar";
-$slot_name1 = "Bulletproof Saxophone Playing Left Column";
+$slot_name1 = "Bulletproof Saxophone Playing Graphics House";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-multiwidth";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth";
 $Alt2 = "Bulletproof Saxophone Playing";
 $Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class2 = "bsp-narrow-sidebar";
-$slot_name2 = "Bulletproof Saxophone Playing Left Column";
+$slot_name2 = "Bulletproof Saxophone Playing Graphics House";
 
 $num = rand (1,2);
 

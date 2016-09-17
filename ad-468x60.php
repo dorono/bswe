@@ -8,11 +8,11 @@ $Url1 = "http://dansr.com/vandoren/products/225/407/";
 $class1 = "vandoren_468x60";
 $slot_name1 = "Vandoren Jazzmix";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/SaxDakota_BannerAd468x60_Artists2.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/dakota-100-dollars.jpg";
 $Alt2 = "Sax Dakota";
-$Url2 = "http://saxdakota.com/";
+$Url2 = "http://www.saxdakota.com/saxdakota_rebate.html";
 $class2 = "saxdakota_468x60";
-$slot_name2 = "Sax Dakota - Best Sax Around";
+$slot_name2 = "Sax Dakota - $100";
 
 
 $num = rand (1,2);
@@ -28,3 +28,4 @@ print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-468x60\"><a href=\"".$URL
 class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\"
 alt=\"".$Alt."\" width=\"468\" height=\"60\"></a></div>";
 ?>
+

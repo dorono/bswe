@@ -14,12 +14,11 @@ $Url1 = "http://10mfan.com/";
 $class1 = "10mFan_300x250_top_banner";
 $slot_name1 = "10mFan 350";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/10m-fan.jpg";
-$Alt2 = "10mFan";
-$Url2 = "http://10mfan.com/";
-$class2 = "10mFan_300x250_top_banner";
-$slot_name2 = "10mFan 350";
-
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/CBadvertBSWE-handmade.jpg";
+$Alt2 = "Corry Brothers";
+$Url2 = "http://www.corrybros.com/";
+$class2 = "CorryBros_300x250_handmade";
+$slot_name2 = "Corry Brothers 350";
 
 $num = rand (1,2);
 

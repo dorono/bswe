@@ -8,11 +8,11 @@ $Url1 = "http://www.trevorjamessaxophones.com";
 $class1 = "massullo";
 $slot_name1 = "Massullo Music 300x250 Ad";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
-$Alt2 = "Trevor James Signature Custom Raw Saxophone";
-$Url2 = "http://www.trevorjamessaxophones.com";
-$class2 = "massullo";
-$slot_name2 = "Massullo Music 300x250 Ad";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/MorganAdv1.jpg";
+$Alt2 = "Morgan Mouthpieces";
+$Url2 = "http://www.morganmouthpieces.com/";
+$class2 = "morgan-mouthpieces-handmade";
+$slot_name2 = "Morgan Mouthpieces 300x250 Ad";
 
 
 $num = mt_rand(1,2);
