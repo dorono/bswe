@@ -1,24 +1,17 @@
 <?php
 
 // ADS 1 & 2
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/vandoren-s-mouthpiece.jpg";
+$Alt1 = "Vandoren";
+$Url1 = "http://www.dansr.com/vandoren/products/mouthpieces/saxophone/alto/v16";
+$class1 = "vandoren_468x60";
+$slot_name1 = "Vandoren S+";
 
-/*$Img1 = get_bloginfo('url') . "/wp-content/uploads/bob-sheppard-signature-300x250-blue.jpg";
-$Alt1 = "MACSAX Bob Sheppard Signature Series Mouthpieces";
-$Url1 = "http://macsax.com/macsax-hard-rubber-saxophone-mouthpieces";
-$class1 = "macsax_sheppard_300x250_top_banner";
-$slot_name1 = "MACSAX Sheppard Mouthpiece 350 top";*/
-
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/10m-fan.jpg";
-$Alt1 = "10mFan";
-$Url1 = "http://10mfan.com/";
-$class1 = "10mFan_300x250_top_banner";
-$slot_name1 = "10mFan 350";
-
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/CBadvertBSWE-handmade.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/corry-bros-sep-2016.jpg";
 $Alt2 = "Corry Brothers";
 $Url2 = "http://www.corrybros.com/";
 $class2 = "CorryBros_300x250_handmade";
-$slot_name2 = "Corry Brothers 350";
+$slot_name2 = "Corry Brothers - Sept 2016";
 
 $num = rand (1,2);
 
