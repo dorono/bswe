@@ -2,17 +2,17 @@
 
 // ADS 1 & 2
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/dakota-100-dollars.jpg";
-$Alt2 = "Sax Dakota";
-$Url2 = "http://www.saxdakota.com/saxdakota_rebate.html";
-$class2 = "saxdakota_468x60";
-$slot_name2 = "Sax Dakota - $100";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/sporanoplanet.png";
+$Alt1 = "Soprano Planet";
+$Url1 = "http://sopranoplanet.com/";
+$class1 = "sopranoplanet_468x60";
+$slot_name1 = "Soprano Planet - World Class";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/dakota-100-dollars.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/SaxDakota_BannerAd468x60_Artists4.jpg";
 $Alt2 = "Sax Dakota";
-$Url2 = "http://www.saxdakota.com/saxdakota_rebate.html";
+$Url2 = "http://saxdakota.com/phaetondakota-rebate/";
 $class2 = "saxdakota_468x60";
-$slot_name2 = "Sax Dakota - $100";
+$slot_name2 = "Sax Dakota - Up to $250";
 
 
 $num = rand (1,2);

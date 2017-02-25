@@ -77,7 +77,7 @@ body {
         font-size: 14px;
         line-height: 1.5em;
     }
-    
+
     #article-bottom-nl {
         h2 {
             border-top: 1px solid $general-outline;
@@ -104,7 +104,7 @@ body {
         background: $bgcolor-1;
     }
 
-    #execphp-10 {
+    #body > div:first-child {
         background: $bgcolor-3;
 
         .banner728 {
@@ -376,7 +376,7 @@ body {
 
             @media screen and (min-width: $medium) {
                 display: none;
-            }            
+            }
         }
     }
 
@@ -574,10 +574,10 @@ body {
 
             @media screen and (min-width: $medium) and (max-width: $medium-large) {
                 display: none;
-            }            
+            }
         }
-        
-        
+
+
         ul {
             display: none;
         }
@@ -602,7 +602,7 @@ body {
         a {
             font-weight: normal;
         }
-        
+
         legend {
             font: {
                 size: 18px;

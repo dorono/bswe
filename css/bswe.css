@@ -84,10 +84,10 @@ body {
 
             @media screen and (min-width: $medium) and (max-width: $medium-large) {
                 display: none;
-            }            
+            }
         }
-        
-        
+
+
         ul {
             display: none;
         }
@@ -121,11 +121,11 @@ body #content {
   background: #fff;
 }
 /* line 107, ../../sass/_bswe.scss */
-body #execphp-10 {
+body #body > div:first-child {
   background: #e2e2e2;
 }
 /* line 110, ../../sass/_bswe.scss */
-body #execphp-10 .banner728 {
+body #body > div:first-child .banner728 {
   margin: 0;
   max-height: 90px;
   text-align: center;
