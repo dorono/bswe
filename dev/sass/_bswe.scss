@@ -274,6 +274,11 @@ body {
                 &:last-child {
                     margin-right: 0;
                 }
+
+                a {
+                  color: #9ccfee;
+                  font-weight: bold;
+                }
             }
         }
     }
@@ -392,6 +397,7 @@ body {
 
     #nav-bar {
         min-height: inherit;
+        padding-top: 4px;
 
         ul {
             @media screen and (max-width: $medium-small) {
@@ -509,6 +515,16 @@ body {
 
             }
         }
+    }
+
+    .top-text-ad {
+      padding-bottom: 7px;
+
+      a {
+        color: #fff;
+        font-style: italic;
+        font-size: 14px;
+      }
     }
 
     /* this is for the accordion menu, out of commission for now

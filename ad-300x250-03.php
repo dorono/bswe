@@ -1,28 +1,27 @@
 <?php
 
-//ADS 3 & 4
+// ADS 7 & 8
 
-$Img3 = get_bloginfo('url') . "/wp-content/uploads/just_joes.jpg";
-$Alt3 = "Just Joe's Sax Gel Strap";
-$Url3 = "http://justjoessaxgelstrap.com";
-$class3 = "just_joes_position2";
-$slot_name3 = "Just Joes 300x250 bottom";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/trevor-james-saxophones.jpg";
+$Alt1 = "Trevor James Signature Custom Raw Saxophone";
+$Url1 = "http://www.trevorjamessaxophones.com";
+$class1 = "massullo";
+$slot_name1 = "Massullo Music 300x250 Ad";
 
-$Img4 = get_bloginfo('url') . "/wp-content/uploads/reed-booster.jpg";
-$Alt4 = "Reed Booster";
-$Url4 = "http://www.bravoreeds.net/introducing-reed-booster/";
-$class4 = "Reed Booster";
-$slot_name4 = "Bravo Reeds";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/MorganAdv1.jpg";
+$Alt2 = "Morgan Mouthpieces";
+$Url2 = "http://www.morganmouthpieces.com/";
+$class2 = "morgan-mouthpieces-handmade";
+$slot_name2 = "Morgan Mouthpieces 300x250 Ad";
 
 
-$num = rand (3,4);
+$num = mt_rand(1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 $slot_name = ${'slot_name'.$num};
-
 
 print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-03\"><a href=\"".$URL."\" target=\"_blank\"
 class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"

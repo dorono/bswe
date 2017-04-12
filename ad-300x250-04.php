@@ -1,32 +1,21 @@
 <?php
 
-// ADS 5 & 6
+//ADS 3 & 4
 
-$Img0 = get_bloginfo('url') . "/wp-content/uploads/jody-jazz-garzone300x250.jpg";
-$Alt0 = "JodyJazz - George Garzone: In the Funk Zone";
-$Url0 = "http://jodyjazz.com/new-dvd-in-the-funk-zone/";
-$class0 = "jodyjazz_garzone_funk";
-$slot_name0 = "Jody Jazz Slot 1 - 300x250";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/just_joes.jpg";
+$Alt1 = "Just Joe's Sax Gel Strap";
+$Url1 = "http://justjoessaxgelstrap.com";
+$class1 = "just_joes_position2";
+$slot_name1 = "Just Joes 300x250 bottom";
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/jody-jazz-deserve300x250.jpg";
-$Alt1 = "JodyJazz - Don't You Deserve a DV?";
-$Url1 = "http://jodyjazz.com/dv-metal-sax-mouthpieces/";
-$class1 = "jodyjazz_dv_metal_mpc";
-$slot_name1 = "Jody Jazz Slot 2 - 300x250";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/reed-booster.jpg";
+$Alt2 = "Reed Booster";
+$Url2 = "http://www.bravoreeds.net/introducing-reed-booster/";
+$class2 = "Reed Booster";
+$slot_name2 = "Bravo Reeds";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/rampone.jpg";
-$Alt2 = "Rampone";
-$Url2 = "http://www.ramponecazzani-usa.com/";
-$class2 = "ramponecazzani_italian_family";
-$slot_name2 = "Rampone 300x250";
 
-$Img3 = get_bloginfo('url') . "/wp-content/uploads/rampone.jpg";
-$Alt3 = "Rampone";
-$Url3 = "http://www.ramponecazzani-usa.com/";
-$class3 = "ramponecazzani_italian_family";
-$slot_name3 = "Rampone 300x250";
-
-$num = mt_rand (0,3);
+$num = rand (1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};

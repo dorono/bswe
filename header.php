@@ -21,7 +21,7 @@
 <!-- wp_header -->
 <?php wp_head(); ?>
 
-	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<!-- <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script> -->
 
 	<?php //For Facebook to create custom audience out of my website visitors ?>
 	<!-- Facebook Pixel Code -->
@@ -48,10 +48,11 @@
 
 	<div id="headerwrap">
 
-		<?php dynamic_sidebar('top-text-ad'); ?>
-
 		<div id="nav-bar">
+
 			<div class="pagewidth clearfix">
+				<?php dynamic_sidebar('top-text-ad'); ?>
+
 				<div class="nav-menu-container">
 					<?php if (function_exists('wp_nav_menu')) {
 						wp_nav_menu(array('theme_location' => 'top-nav' , 'fallback_cb' => '' , 'container'  => '' , 'menu_id' => 'top-nav' , 'menu_class' => 'top-nav'));

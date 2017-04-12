@@ -2,17 +2,17 @@
 
 // ADS 1 & 2
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/jlwg-300x-250-may-2015.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
 $Alt1 = "Jazz Lessons with Giants";
 $Url1 = "http://www.jazzlessonswithgiants.com/";
-$class1 = "jazz-lessons-with-giants-all-3-black";
-$slot_name1 = "Jazz Lessons with Giants All 3 Sidebar Black";
+$class1 = "jazz-lessons-with-giants-all-devices";
+$slot_name1 = "Jazz Lessons with Giants All Devices";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/jlwg-300x-250-may-2015.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
 $Alt2 = "Jazz Lessons with Giants";
 $Url2 = "http://www.jazzlessonswithgiants.com/";
-$class2 = "jazz-lessons-with-giants-all-3-black";
-$slot_name2 = "Jazz Lessons with Giants All 3 Sidebar Black";
+$class2 = "jazz-lessons-with-giants-all-devices";
+$slot_name2 = "Jazz Lessons with Giants All Devices";
 
 
 $num = rand (1,2);

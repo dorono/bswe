@@ -2,16 +2,16 @@
 
 // ADS 8 & 9
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/retro-revival-blk.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/retro-revival-white.jpg";
 $Alt1 = "Retro Revival Saxophone Mouthpieces";
 $Url1 = "https://retro-revival.com/";
-$class1 = "retro-revival";
+$class1 = "retro-revival-white";
 $slot_name1 = "Retro Revival 300x250 Ad";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/retro-revival-blk.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/retro-revival-white.jpg";
 $Alt2 = "Retro Revival Saxophone Mouthpieces";
 $Url2 = "https://retro-revival.com/";
-$class2 = "retro-revival";
+$class2 = "retro-revival-white";
 $slot_name2 = "Retro Revival 300x250 Ad";
 
 

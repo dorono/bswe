@@ -78,7 +78,7 @@ global $themify; ?>
 				<span class='st_twitter_large' displayText='Tweet'></span>
 				<span class='st_googleplus_large' displayText='Google +'></span>
 				<span class='st_email_large' displayText='Email'></span>
-				<span class='st_sharethis_large' displayText='ShareThis'></span>
+				<!-- <span class='st_sharethis_large' displayText='ShareThis'></span> -->
 			</div>
 		<?php } ?>
 
