@@ -1,9 +1,9 @@
 <?php
 
 // ADS 1 & 2
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/vandoren-s-mouthpiece.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/bswe-JAVA-Green.jpg";
 $Alt1 = "Vandoren";
-$Url1 = "http://www.dansr.com/vandoren/products/mouthpieces/saxophone/alto/v16";
+$Url1 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/java";
 $class1 = "vandoren_468x60";
 $slot_name1 = "Vandoren S+";
 

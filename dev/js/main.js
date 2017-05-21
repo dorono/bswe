@@ -1,11 +1,8 @@
 (function($) {
     var BSWE = BSWE || {};
-    console.log('13333 effff');
     BSWE.applySkipClass = function (list) {
         $.each(list, function(index , item) {
             var currentSelector = item;
-
-            console.log('item: ' + item);
 
             $(currentSelector).each(function() {
                $(this).addClass('skip');
@@ -15,8 +12,6 @@
 
     BSWE.distributeAds = function(settings) {
         var adArray = [];
-
-        console.log(settings.adDivider + ' ' + settings.frequency + ' ' + settings.contentContainer);
 
         // randomize the array
         function shuffle(array) {
@@ -37,8 +32,6 @@
         }
 
         $('.sidebar-ads').each(function () {
-            console.log('this is the parent id: ' + $(this).parents('.ad-container').attr('id'));
-
             // put all ads into an array
             adArray.push({
                 adSlot: $(this).data('ad-slot'),
@@ -54,17 +47,10 @@
             adParent,
             sourceAd;
 
-
-        console.log('skip? : ' + settings.adDivider);
-
         $(contentContainer).find(settings.adDivider).each(function (index) {
-            console.log('content container: ' + contentContainer);
-
             if ((index + 1) % settings.frequency === 0 && $('.widgetwrap .sidebar-ads').length > adNum) {
                 adIdentifier = shuffledAdArray[adNum].adSlot;
                 adParent = shuffledAdArray[adNum].adContainer;
-
-                console.log('number of ad slots: ' + $('.widgetwrap .sidebar-ads').length);
 
                 currentAd = '.sidebar-ads[data-ad-slot=' + adIdentifier + ']';
                 sourceAd = $('#' + adParent).find(currentAd);

@@ -1,16 +1,25 @@
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-8542965-5']);
-_gaq.push(['_gat._forceSSL']);
-_gaq.push(['_trackPageview']);
+ga('create', 'UA-8542965-5', 'auto', 'adClickTracker');
 
 
 (function($) {
-    $('.ad a').on('click', function() {
-        var label = $(this).attr('data-slot-name');
-        var adName = $(this).attr('class');
-        _gaq.push(['_setCustomVar', 1, 'ad name', adName, 1]);
-        _gaq.push(['_trackEvent', 'Advertisements', 'Banner Click', label]);
-        console.log('ad slot name', label, 'ad name', adName);
+
+  $('.ad a').on('click', function() {
+      var label = $(this).attr('data-slot-name');
+      var adName = $(this).attr('class');
+
+
+      ga('adClickTracker.send', 'event', {
+        eventCategory: 'Advertisements',
+        eventAction: 'Banner Click',
+        eventLabel: label,
+        eventValue: adName,
+        transport: 'beacon'
+      });
+
+
+    });
+    ga(function() {
+      // Logs an array of all tracker objects.
+      console.log('here are all', ga.getAll());
     });
 })(jQuery);
-
