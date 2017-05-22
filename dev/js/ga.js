@@ -1,25 +1,11 @@
 ga('create', 'UA-8542965-5', 'auto', 'adClickTracker');
 
-
 (function($) {
 
   $('.ad a').on('click', function() {
       var label = $(this).attr('data-slot-name');
-      var adName = $(this).attr('class');
+      var adName = $(this).attr('data-ad-name');
 
-
-      ga('adClickTracker.send', 'event', {
-        eventCategory: 'Advertisements',
-        eventAction: 'Banner Click',
-        eventLabel: label,
-        eventValue: adName,
-        transport: 'beacon'
-      });
-
-
-    });
-    ga(function() {
-      // Logs an array of all tracker objects.
-      console.log('here are all', ga.getAll());
+      ga('adClickTracker.send', 'event', 'Advertisements', 'Banner Click', label, adName);
     });
 })(jQuery);
