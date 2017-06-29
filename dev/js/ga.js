@@ -1,11 +1,14 @@
-ga('create', 'UA-8542965-5', 'auto', 'adClickTracker');
-
 (function($) {
 
   $('.ad a').on('click', function() {
-      var label = $(this).attr('data-slot-name');
-      var adName = $(this).attr('data-ad-name');
+      var label = $(this).data('slot-name');
 
-      ga('adClickTracker.send', 'event', 'Advertisements', 'Banner Click', label, adName);
+      ga('send', {
+        hitType: 'event',
+        eventCategory: 'Advertisements',
+        eventAction: 'Banner Click',
+        eventLabel: label
+      });
+
     });
 })(jQuery);

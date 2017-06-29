@@ -2,29 +2,28 @@
 
 // ADS 1 & 2
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/dakota-astonished.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/marc-jean-hypes.jpg";
 $Alt1 = "Sax Dakota";
-$Url1 = "http://www.saxdakota.com/";
-$class1 = "saxdakota_468x60";
-$slot_name1 = "Sax Dakota - Up to $250";
+$Url1 = "http://www.musiquedemarc.com/En/default.asp?pg=lig";
+$ad_name1 = "marcjean_468x60";
+$slot_name1 = "Ligature II by Marc Jean";
 
 $Img2 = get_bloginfo('url') . "/wp-content/uploads/dakota-astonished.jpg";
 $Alt2 = "Sax Dakota";
 $Url2 = "http://www.saxdakota.com/";
-$class2 = "saxdakota_468x60";
+$ad_name2 = "saxdakota_468x60";
 $slot_name2 = "Sax Dakota - Up to $250";
-
 
 $num = rand (1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
-$class = ${'class'.$num};
+$ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
 
 
 print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-468x60\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\"
+class=\"ad-banner\" data-ad-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\"
 alt=\"".$Alt."\" width=\"468\" height=\"60\"></a></div>";
 ?>

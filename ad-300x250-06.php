@@ -2,28 +2,28 @@
 
 // ADS 9 & 10
 
-$Img9 = get_bloginfo('url') . "/wp-content/uploads/lakey-saxmouthpiece-photo.jpg";
-$Alt9 = "Claude Lakey";
-$Url9 = "http://www.claudelakey.com/";
-$class9 = "Claude-Lakey-Banner-Sax-And-Mouthpiece-Photo";
-$slot_name9 = "Claude Lakey Sidebar";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/lakey-saxmouthpiece-photo.jpg";
+$Alt1 = "Claude Lakey";
+$Url1 = "http://www.claudelakey.com/";
+$ad_name1 = "Claude-Lakey-Banner-Sax-And-Mouthpiece-Photo";
+$slot_name1 = "Claude Lakey Sidebar";
 
 
-$Img10 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
-$Alt10 = "Reed Geek";
-$Url10 = "http://www.reedgeek.com/";
-$class10 = "Reed-Geek-Black-Diamond";
-$slot_name10 = "Reed Geek Sidebar - Sanborn";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
+$Alt2 = "Reed Geek";
+$Url2 = "http://www.reedgeek.com/";
+$ad_name2 = "Reed-Geek-Black-Diamond";
+$slot_name2 = "Reed Geek Sidebar - Sanborn";
 
-$num = rand (9,10);
+$num = rand (1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
-$class = ${'class'.$num};
+$ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
 
 
 print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-06\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
+class=\"ad-banner\" data-ad-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
 ?>

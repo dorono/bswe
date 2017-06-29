@@ -1,28 +1,27 @@
 <?php
 
-// ADS 1 & 2
 $Img1 = get_bloginfo('url') . "/wp-content/uploads/bswe-JAVA-Green.jpg";
 $Alt1 = "Vandoren";
 $Url1 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/java";
-$class1 = "vandoren_468x60";
+$ad_name1 = "vandoren_300x250";
 $slot_name1 = "Vandoren S+";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/corry-bros-sep-2016.jpg";
-$Alt2 = "Corry Brothers";
-$Url2 = "http://www.corrybros.com/";
-$class2 = "CorryBros_300x250_handmade";
-$slot_name2 = "Corry Brothers - Sept 2016";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/bswe-JAVA-Green.jpg";
+$Alt2 = "Vandoren";
+$Url2 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/java";
+$ad_name2 = "vandoren_300x250";
+$slot_name2 = "Vandoren S+";
 
 $num = rand (1,2);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
-$class = ${'class'.$num};
+$ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
 
 
 print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-02\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
+class=\"ad-banner\" data-ad-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
 height=\"250\"></a></div>";
 ?>
