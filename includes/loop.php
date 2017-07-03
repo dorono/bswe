@@ -73,7 +73,7 @@ global $themify; ?>
 
 		<?php if (!is_front_page() && !is_archive()) { ?>
 			<div class="social_icons">
-				<p>Share this 	Article <span>&#10549;</span></p>
+				<p>Share this Article<span>&nbsp;&nbsp;&#10549;</span></p>
 				<span class='st_facebook_large' displayText='Facebook'></span>
 				<span class='st_twitter_large' displayText='Tweet'></span>
 				<span class='st_googleplus_large' displayText='Google +'></span>

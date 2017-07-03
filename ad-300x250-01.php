@@ -12,7 +12,6 @@ $Url2 = "http://www.jazzlessonswithgiants.com/";
 $ad_name2 = "jazz-lessons-with-giants-all-devices";
 $slot_name2 = "Jazz Lessons with Giants All Devices";
 
-
 $num = mt_rand(1,2);
 
 $Image = ${'Img'.$num};
