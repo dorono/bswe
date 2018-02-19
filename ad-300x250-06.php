@@ -9,11 +9,11 @@ $ad_name1 = "Claude-Lakey-Banner-Sax-And-Mouthpiece-Photo";
 $slot_name1 = "Claude Lakey Sidebar";
 
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
 $Alt2 = "Reed Geek";
 $Url2 = "http://www.reedgeek.com/";
 $ad_name2 = "Reed-Geek-Black-Diamond";
-$slot_name2 = "Reed Geek Sidebar - Sanborn";
+$slot_name2 = "Reed Geek Sidebar";
 
 $num = rand (1,2);
 

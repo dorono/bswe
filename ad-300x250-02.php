@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/bswe-JAVA-Green.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/dansr-juno.jpg";
 $Alt1 = "Vandoren";
-$Url1 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/java";
-$ad_name1 = "vandoren_300x250";
-$slot_name1 = "Vandoren S+";
+$Url1 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/juno";
+$ad_name1 = "vandoren_dansr-300x250";
+$slot_name1 = "Vandoren DANSR Juno";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/bswe-JAVA-Green.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/dansr-juno.jpg";
 $Alt2 = "Vandoren";
-$Url2 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/java";
-$ad_name2 = "vandoren_300x250";
-$slot_name2 = "Vandoren S+";
+$Url2 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/juno";
+$ad_name2 = "vandoren_dansr-300x250";
+$slot_name2 = "Vandoren DANSR Juno";
 
 $num = rand (1,2);
 

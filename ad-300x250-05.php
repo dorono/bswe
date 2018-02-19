@@ -26,7 +26,7 @@ $Url4 = "http://www.ramponecazzani-usa.com/";
 $ad_name4 = "ramponecazzani_italian_family";
 $slot_name4 = "Rampone 300x250";
 
-$num = mt_rand (0,3);
+$num = mt_rand (1,4);
 
 $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
