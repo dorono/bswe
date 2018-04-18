@@ -36,12 +36,12 @@
 
 <?php
 
-$Img1 = "http://www.bestsaxophonewebsiteever.com/wp-content/uploads/select_jazz_mouthpiece_300x250.png";
+$Img1 = "http:s//www.bestsaxophonewebsiteever.com/wp-content/uploads/select_jazz_mouthpiece_300x250.png";
 $Alt1 = "D'Addario Select Jazz";
 $Url1 = "http://www.woodwinds.daddario.com/woodwindsMedia.Page?ActiveID=2953&MediaId=10234&utm_source=BestSaxWebsiteEver&utm_medium=300x250Banner&utm_campaign=SelectJazz";
 $class1 = "daddario_300x250_banner";
 
-$Img2 ="http://www.bestsaxophonewebsiteever.com/wp-content/uploads/trevor-james-saxophones.jpg";
+$Img2 ="http:s//www.bestsaxophonewebsiteever.com/wp-content/uploads/trevor-james-saxophones.jpg";
 $Alt2 = "Trevor James Signature Custom Raw Saxophone";
 $Url2 = "http://massullomusic.com/trevor-james-signature-custom-raw-saxophones/";
 $class2 = "massullo";

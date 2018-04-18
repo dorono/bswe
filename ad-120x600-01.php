@@ -2,13 +2,13 @@
 
 $Img1 = get_bloginfo('url') . "/wp-content/uploads/margitza-alldevices-multiwidth";
 $Alt1 = "Bulletproof Saxophone Playing";
-$Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
+$Url1 = "http:s//www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class1 = "bsp-narrow-sidebar";
 $slot_name1 = "Bulletproof Saxophone Playing All Devices";
 
 $Img2 = get_bloginfo('url') . "/wp-content/uploads/margitza-alldevices-multiwidth";
 $Alt2 = "Bulletproof Saxophone Playing";
-$Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
+$Url2 = "http:s//www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class2 = "bsp-narrow-sidebar";
 $slot_name2 = "Bulletproof Saxophone Playing All Devices";
 

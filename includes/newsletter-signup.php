@@ -3,8 +3,8 @@
     <h4><em>INCLUDED WITH SIGNUP: </em>FREE sax tips booklet +
         3-part audio master class series with <em class="italics">Ricky Sweum, Tim Price & Bob Sheppard</em></h4>
     <!-- Begin MailChimp Signup Form -->
-    <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.validate.js"></script>
-    <script type="text/javascript" src="http://downloads.mailchimp.com/js/jquery.form.js"></script>
+    <script type="text/javascript" src="https://downloads.mailchimp.com/js/jquery.validate.js"></script>
+    <script type="text/javascript" src="https://downloads.mailchimp.com/js/jquery.form.js"></script>
     <script type="text/javascript">
         // delete this script tag and use a "div.mce_inline_error{ XXX !important}" selector
         // or fill this in and it will be inlined when errors are generated
@@ -14,7 +14,7 @@
         <strong><em>Of course, your email address is 100% private, and you'll never be harassed with useless spam.</em> </strong>
     </p>
     <div id="mc_embed_signup">
-        <form action="http://bestsaxophonewebsiteever.us2.list-manage.com/subscribe/post?u=42c62e22f20fe87b4c27dc640&amp;id=e0aed5ed01" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+        <form action="https://bestsaxophonewebsiteever.us2.list-manage.com/subscribe/post?u=42c62e22f20fe87b4c27dc640&amp;id=e0aed5ed01" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
             <div class="mc-field-group">
                 <!--<label for="mce-EMAIL">Email Address <strong class="note-required">*</strong>-->
                 </label>

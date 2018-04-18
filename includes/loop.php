@@ -84,6 +84,14 @@ global $themify; ?>
 
 
 		<div class="entry-content" itemprop="articleBody">
+		<?php
+		$permalink = get_permalink();
+		$find = array( 'http://', 'https://' );
+		$replace = '';
+		$output = str_replace( $find, $replace, $permalink );
+
+		?>
+		<div class="fb-like" data-href="<?php echo $output ?>" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 
 		<?php if ( 'excerpt' == $themify->display_content && ! is_attachment() ) : ?>
 

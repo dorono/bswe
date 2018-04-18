@@ -6,11 +6,11 @@ $Url1 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/juno";
 $ad_name1 = "vandoren_dansr-300x250";
 $slot_name1 = "Vandoren DANSR Juno";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/dansr-juno.jpg";
-$Alt2 = "Vandoren";
-$Url2 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/juno";
-$ad_name2 = "vandoren_dansr-300x250";
-$slot_name2 = "Vandoren DANSR Juno";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/WoodWindDesign-sax-stands-green.jpg";
+$Alt2 = "Wood Wind Design Sax Stand";
+$Url2 = "https://www.youtube.com/watch?v=LOk5UxB64mg&t=3s";
+$ad_name2 = "woodwind-design-green-300x250";
+$slot_name2 = "Woodwind Design";
 
 $num = rand (1,2);
 
