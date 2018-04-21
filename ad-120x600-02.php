@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/improvise-for-real2";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/ochres-robot-multiwidth";
 $Alt1 = "Improvise for Real";
-$Url1 = "https://improviseforreal.com/welcome-sax/";
-$class1 = "improvise-for-real-ad-2";
-$slot_name1 = "Improvise for Real - Ad #2";
+$Url1 = "http://www.ochresmusic.com/";
+$class1 = "ochres-robot";
+$slot_name1 = "Ochres Music - Free Your Soul";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/improvise-for-real2";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/ochres-robot-multiwidth";
 $Alt2 = "Improvise for Real";
-$Url2 = "https://improviseforreal.com/welcome-sax/";
-$class2 = "improvise-for-real-ad-2";
-$slot_name2 = "Improvise for Real - Ad #2";
+$Url2 = "http://www.ochresmusic.com/";
+$class2 = "ochres-robot";
+$slot_name2 = "Ochres Music - Free Your Soul";
 
 $num = mt_rand(1,2);
 

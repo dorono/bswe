@@ -6,7 +6,7 @@ $Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/"
 $class1 = "bsp-narrow-sidebar";
 $slot_name1 = "Bulletproof Saxophone Playing All Devices";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/margitza-alldevices-multiwidth";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth";
 $Alt2 = "Bulletproof Saxophone Playing";
 $Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
 $class2 = "bsp-narrow-sidebar";

@@ -32,4 +32,5 @@ foreach ( $theme_includes as $include ) { locate_template( $include, true ); }
  * To add custom PHP functions to the theme, create a new 'custom-functions.php' file in the theme folder.
  * 
 ***********************************************************************************************************/
+
 ?>

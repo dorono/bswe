@@ -21,7 +21,7 @@
 <!-- wp_header -->
 <?php wp_head(); ?>
 
-	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
 
 	<?php //For Facebook to create custom audience out of my website visitors ?>
 	<!-- Facebook Pixel Code -->
