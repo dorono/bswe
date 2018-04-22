@@ -21,7 +21,7 @@
 <!-- wp_header -->
 <?php wp_head(); ?>
 
-	<script type="text/javascript" src="https://w.sharethis.com/button/buttons.js"></script>
+<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5adb1bcabc190a0013e2aba9&product=inline-share-buttons' async='async'></script>
 
 	<?php //For Facebook to create custom audience out of my website visitors ?>
 	<!-- Facebook Pixel Code -->
@@ -38,6 +38,17 @@
 	src="https://www.facebook.com/tr?id=909075279152522&ev=PageView&noscript=1"
 	/></noscript>
 	<!-- End Facebook Pixel Code -->
+
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/all.js#xfbml=1";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
 
 	<!-- start Google Analytics Tracking Code -->
 	<script>

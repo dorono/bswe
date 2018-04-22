@@ -45,7 +45,6 @@ global $themify; ?>
 
 	<div class="post-content">
 
-		<!-- Share This buttons -->
 		<?php if($themify->hide_date != "yes"): ?>
 			<time datetime="<?php the_time('o-m-d') ?>" class="post-date entry-date updated" itemprop="datePublished"><?php echo get_the_date( apply_filters( 'themify_loop_date', '' ) ) ?></time>
 		<?php endif; //post date ?>
@@ -72,14 +71,19 @@ global $themify; ?>
 		<?php endif; //post meta ?>
 
 		<?php if (!is_front_page() && !is_archive()) { ?>
-			<div class="social_icons">
+			<div class="social_icons" style="margin-bottom: 10px;">
 				<p>Share this Article<span>&nbsp;&nbsp;&#10549;</span></p>
-				<span class='st_facebook_large' displayText='Facebook'></span>
-				<span class='st_twitter_large' displayText='Tweet'></span>
-				<span class='st_googleplus_large' displayText='Google +'></span>
-				<span class='st_email_large' displayText='Email'></span>
-				<!-- <span class='st_sharethis_large' displayText='ShareThis'></span> -->
+				<div class="sharethis-inline-share-buttons"></div>
+
+				<div class="fb-like"
+					style="margin-top: 10px;"
+					data-href="<?php the_permalink(); ?>"
+					data-layout="standard"
+					data-action="like"
+					data-show-faces="true">
+				</div>
 			</div>
+
 		<?php } ?>
 
 
