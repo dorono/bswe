@@ -74,10 +74,12 @@ global $themify; ?>
 			<div class="social_icons" style="margin-bottom: 10px;">
 				<p>Share this Article<span>&nbsp;&nbsp;&#10549;</span></p>
 				<div class="sharethis-inline-share-buttons"></div>
+<?php
 
+$url = preg_replace("/^https:/i", "http:", get_permalink());?>
 				<div class="fb-like"
 					style="margin-top: 10px;"
-					data-href="<?php the_permalink(); ?>"
+					data-href="<?php echo $url; ?>"
 					data-layout="standard"
 					data-action="like"
 					data-show-faces="true">

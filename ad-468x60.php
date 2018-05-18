@@ -8,11 +8,11 @@ $Url1 = "http://www.musiquedemarc.com/En/default.asp?pg=lig";
 $ad_name1 = "marcjean_468x60";
 $slot_name1 = "Ligature II by Marc Jean";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/dakota-astonished.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/dakota-unlaquered.jpg";
 $Alt2 = "Sax Dakota";
 $Url2 = "http://www.saxdakota.com/";
 $ad_name2 = "saxdakota_468x60";
-$slot_name2 = "Sax Dakota - Up to $250";
+$slot_name2 = "Sax Dakota - For Real Un-Laquered Bronze";
 
 $num = rand (1,2);
 
