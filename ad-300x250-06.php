@@ -2,11 +2,11 @@
 
 // ADS 9 & 10
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/lakey-saxmouthpiece-photo.jpg";
-$Alt1 = "Claude Lakey";
-$Url1 = "http://www.claudelakey.com/";
-$ad_name1 = "Claude-Lakey-Banner-Sax-And-Mouthpiece-Photo";
-$slot_name1 = "Claude Lakey Sidebar";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
+$Alt1 = "Reed Geek";
+$Url1 = "http://www.reedgeek.com/";
+$ad_name1 = "Reed-Geek-Black-Diamond";
+$slot_name1 = "Reed Geek Sidebar";
 
 
 $Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
