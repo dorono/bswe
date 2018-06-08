@@ -21,7 +21,7 @@
 <!-- wp_header -->
 <?php wp_head(); ?>
 
-<script type='text/javascript' src='//platform-api.sharethis.com/js/sharethis.js#property=5adb1bcabc190a0013e2aba9&product=inline-share-buttons' async='async'></script>
+<script src="//platform-api.sharethis.com/js/sharethis.js#property=5adb1bcabc190a0013e2aba9&product=gdpr-compliance-tool"></script>
 
 	<?php //For Facebook to create custom audience out of my website visitors ?>
 	<!-- Facebook Pixel Code -->
