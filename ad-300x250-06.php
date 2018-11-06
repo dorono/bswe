@@ -8,7 +8,6 @@ $Url1 = "http://www.reedgeek.com/";
 $ad_name1 = "Reed-Geek-Black-Diamond";
 $slot_name1 = "Reed Geek Sidebar";
 
-
 $Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
 $Alt2 = "Reed Geek";
 $Url2 = "http://www.reedgeek.com/";
