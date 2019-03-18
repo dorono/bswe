@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/dansr-juno.jpg";
-$Alt1 = "Vandoren";
-$Url1 = "http://www.dansr.com/vandoren/products/reeds/saxophone/alto/juno";
-$ad_name1 = "vandoren_dansr-300x250";
-$slot_name1 = "Vandoren DANSR Juno";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
+$Alt1 = "Jazz Lessons with Giants";
+$Url1 = "http://www.jazzlessonswithgiants.com/";
+$ad_name1 = "jazz-lessons-with-giants-all-devices";
+$slot_name1 = "Jazz Lessons with Giants All Devices";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/WoodWindDesign-sax-stands-green.jpg";
-$Alt2 = "Wood Wind Design Sax Stand";
-$Url2 = "https://www.youtube.com/watch?v=LOk5UxB64mg&t=3s";
-$ad_name2 = "woodwind-design-green-300x250";
-$slot_name2 = "Woodwind Design";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
+$Alt2 = "Jazz Lessons with Giants";
+$Url2 = "http://www.jazzlessonswithgiants.com/";
+$ad_name2 = "jazz-lessons-with-giants-all-devices";
+$slot_name2 = "Jazz Lessons with Giants All Devices";
 
 $num = rand (1,2);
 

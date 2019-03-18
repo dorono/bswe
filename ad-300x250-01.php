@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
-$Alt1 = "Jazz Lessons with Giants";
-$Url1 = "http://www.jazzlessonswithgiants.com/";
-$ad_name1 = "jazz-lessons-with-giants-all-devices";
-$slot_name1 = "Jazz Lessons with Giants All Devices";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth-300.jpg";
+$Alt1 = "Bulletproof Saxophone Playing";
+$Url1 = "http://www.bulletproofsaxophoneplaying.com";
+$ad_name1 = "bulletproof-saxophone-playing-graphics-house";
+$slot_name1 = "BSP Right Column 300x250";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
-$Alt2 = "Jazz Lessons with Giants";
-$Url2 = "http://www.jazzlessonswithgiants.com/";
-$ad_name2 = "jazz-lessons-with-giants-all-devices";
-$slot_name2 = "Jazz Lessons with Giants All Devices";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth-300.jpg";
+$Alt2 = "Bulletproof Saxophone Playing";
+$Url2 = "http://www.bulletproofsaxophoneplaying.com";
+$ad_name2 = "bulletproof-saxophone-playing-graphics-house";
+$slot_name2 = "BSP Right Column 300x250";
 
 $num = mt_rand(1,2);
 

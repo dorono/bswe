@@ -6,10 +6,10 @@ $Url1 = "http://www.trevorjamessaxophones.com";
 $ad_name1 = "massullo";
 $slot_name1 = "Massullo Music 300x250 Ad";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/MorganAdv1.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/Morgan300ad.jpg";
 $Alt2 = "Morgan Mouthpieces";
 $Url2 = "http://www.morganmouthpieces.com/";
-$ad_name2 = "morgan-mouthpieces-handmade";
+$ad_name2 = "morgan-mouthpieces-vintage-way";
 $slot_name2 = "Morgan Mouthpieces 300x250 Ad";
 
 

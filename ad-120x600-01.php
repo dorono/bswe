@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/margitza-alldevices-multiwidth";
-$Alt1 = "Bulletproof Saxophone Playing";
-$Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
-$class1 = "bsp-narrow-sidebar";
-$slot_name1 = "Bulletproof Saxophone Playing All Devices";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/lfcc-bluenote-font-multiwidth";
+$Alt1 = "Lightning-Fast and Crystal-Clean";
+$Url1 = "http://saxtechnique.com";
+$class1 = "lfcc-narrow-sidebar";
+$slot_name1 = "Lightning-Fast and Crystal-Clean Multiwidth Slot";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth";
-$Alt2 = "Bulletproof Saxophone Playing";
-$Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
-$class2 = "bsp-narrow-sidebar";
-$slot_name2 = "Bulletproof Saxophone Playing All Devices";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/lfcc-bluenote-font-multiwidth";
+$Alt2 = "Lightning-Fast and Crystal-Clean";
+$Url2 = "http://saxtechnique.com";
+$class2 = "lfcc-narrow-sidebar";
+$slot_name2 = "Lightning-Fast and Crystal-Clean Multiwidth Slot";
 
 $num = rand (1,2);
 
