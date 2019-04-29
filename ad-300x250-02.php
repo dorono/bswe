@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
-$Alt1 = "Jazz Lessons with Giants";
-$Url1 = "http://www.jazzlessonswithgiants.com/";
-$ad_name1 = "jazz-lessons-with-giants-all-devices";
-$slot_name1 = "Jazz Lessons with Giants All Devices";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/eartraining-hq.jpg";
+$Alt1 = "Ear Training HQ";
+$Url1 = "http://dorono.eartraininghq.zaxaa.com/s/8252981521425";
+$ad_name1 = "ear-training-hq";
+$slot_name1 = "Ear Training HQ";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/jlwg300x250-all-devices.jpg";
-$Alt2 = "Jazz Lessons with Giants";
-$Url2 = "http://www.jazzlessonswithgiants.com/";
-$ad_name2 = "jazz-lessons-with-giants-all-devices";
-$slot_name2 = "Jazz Lessons with Giants All Devices";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/eartraining-hq.jpg";
+$Alt2 = "Ear Training HQ";
+$Url2 = "http://dorono.eartraininghq.zaxaa.com/s/8252981521425";
+$ad_name2 = "ear-training-hq";
+$slot_name2 = "Ear Training HQ";
 
 $num = rand (1,2);
 
