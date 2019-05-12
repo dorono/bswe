@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/eartraining-hq.jpg";
-$Alt1 = "Ear Training HQ";
-$Url1 = "http://dorono.eartraininghq.zaxaa.com/s/8252981521425";
-$ad_name1 = "ear-training-hq";
-$slot_name1 = "Ear Training HQ";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/Wedge-Ad-300x250.jpg";
+$Alt1 = "The Wedge Distribution";
+$Url1 = "https://www.thewedgedistribution.com/";
+$ad_name1 = "wedge-distribution";
+$slot_name1 = "The Wedge Distribution";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/eartraining-hq.jpg";
-$Alt2 = "Ear Training HQ";
-$Url2 = "http://dorono.eartraininghq.zaxaa.com/s/8252981521425";
-$ad_name2 = "ear-training-hq";
-$slot_name2 = "Ear Training HQ";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/Wedge-Ad-300x250.jpg";
+$Alt2 = "The Wedge Distribution";
+$Url2 = "https://www.thewedgedistribution.com/";
+$ad_name2 = "wedge-distribution";
+$slot_name2 = "The Wedge Distribution";
 
 $num = rand (1,2);
 
