@@ -20,7 +20,7 @@ $Image = ${'Img'.$num};
 $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 
-print "<a href=\"".$URL."\" target=\"_blank\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>"; 
+print "<a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
 ?>
 
 </div>

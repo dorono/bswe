@@ -20,7 +20,7 @@ $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 $slot_name = ${'slot_name'.$num};
 
-print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-120x600-03\"><a href=\"".$URL."\" target=\"_blank\"
+print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-120x600-03\"><a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"
 class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."-300.jpg\"
  alt=\"".$Alt."\"
 class=\"mobile-ad-img\"><img

@@ -24,6 +24,6 @@ $class = ${'class'.$num};
 $slot_name = ${'slot_name'.$num};
 
 
-print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x120-01\"><a href=\"".$URL."\" target=\"_blank\"
+print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x120-01\"><a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"
 class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
 ?>

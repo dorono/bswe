@@ -33,7 +33,7 @@
 </head>
 
 <body>
- 
+
 <?php
 
 $Img1 = "http://www.bestsaxophonewebsiteever.com/wp-content/uploads/BSWE-Side-Ad-4.jpg";
@@ -54,21 +54,21 @@ $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 
-print "<a href=\"".$URL."\" target=\"_blank\" class=\"".$class."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>"; 
+print "<a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" class=\"".$class."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
 ?>
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
-	
+
 	jQuery("a.theo_wanne_300x250_position2_banner").click(function() {
 		_gaq.push(['_trackEvent', 'Advertisements', 'Banner Click', 'Theo Wanne Banner Position 2']);
 	});
-	
+
 	jQuery("a.just_joes_position2").click(function() {
 		_gaq.push(['_trackEvent', 'Advertisements', 'Banner Click', 'Just Joes 300x250 bottom']);
-	});	
-});	
- 	
+	});
+});
+
 </script>
 
 </body>

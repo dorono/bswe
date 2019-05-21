@@ -33,7 +33,7 @@
 </head>
 
 <body>
- 
+
 <?php
 
 $Img1 = "http://www.bestsaxophonewebsiteever.com/wp-content/uploads/bob-sheppard-signature-300x250-blue.jpg";
@@ -53,21 +53,21 @@ $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 
-print "<a href=\"".$URL."\" target=\"_blank\" class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
+print "<a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
 ?>
 
 <script type="text/javascript">
 jQuery(document).ready(function() {
-	
+
 	jQuery("a.macsax_sheppard_300x250_top_banner").click(function() {
 		_gaq.push(['_trackEvent', 'Advertisements', 'Banner Click', 'MACSAX Sheppard Mouthpiece 350 top']);
 	});
-	
+
 	jQuery("a.scale_helper_300x250_top_banner").click(function() {
 		_gaq.push(['_trackEvent', 'Advertisements', 'Banner Click', 'Scale Helper 350 top']);
-	});	
-});	
- 	
+	});
+});
+
 </script>
 
 </body>

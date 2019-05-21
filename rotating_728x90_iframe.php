@@ -73,7 +73,7 @@ $class = ${'class'.$num};
 $gaEventLabel = ${'gaEventLabel'.$num};
 $onClickVal = ${'onClickVal'.$num};
 
-print "<a href=\"".$URL."\" target=\"_blank\" class=\"".$class."\" onclick=\"".$onClickVal."\"><img src=\"".$Image."\" alt=\"".$Alt."\"></a>";
+print "<a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" class=\"".$class."\" onclick=\"".$onClickVal."\"><img src=\"".$Image."\" alt=\"".$Alt."\"></a>";
 
 ?>
 

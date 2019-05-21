@@ -21,7 +21,7 @@
   $class = ${'class'.$num};
   $gaEventLabel = ${'gaEventLabel'.$num};
 
-  print "<a data-slot-name=\"".$gaEventLabel."\" href=\"".$URL."\" target=\"_blank\" class=\"".$class."\"><img src=\"".$Image."\" alt=\"".$Alt."\"></a>";
+  print "<a data-slot-name=\"".$gaEventLabel."\" rel=\"noopener noreferrer nofollow\" href=\"".$URL."\" target=\"_blank\" class=\"".$class."\"><img src=\"".$Image."\" alt=\"".$Alt."\"></a>";
 
   ?>
 </div>
