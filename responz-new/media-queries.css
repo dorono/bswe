@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('themify/fonts/fontawesome-webfont.eot?v=4.2.0');
+    src: url('themify/fonts/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('themify/fonts/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('themify/fonts/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('themify/fonts/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+  }
+
 @media screen and (max-width: 980px) {
 
 	/************************************************************************************
@@ -7,7 +15,7 @@
 	.full_width .themify_builder_row .row_inner {
 		max-width: 94%;
 	}
-	
+
 	/************************************************************************************
 	GRID
 	*************************************************************************************/
@@ -35,7 +43,7 @@
 	.col3-2 {
 		max-width: 62%;
 	}
-	
+
 	/************************************************************************************
 	LAYOUTS
 	*************************************************************************************/
@@ -68,7 +76,7 @@
 	/* reset all to fullwidth */
 	#contentwrap,
 	#content,
-	#sidebar-alt, 
+	#sidebar-alt,
 	#sidebar {
 		width: 100% !important;
 		float: none !important;
@@ -76,7 +84,7 @@
 		margin-left: 0 !important;
 		margin-right: 0 !important;
 	}
-	
+
 	/************************************************************************************
 	HEADER
 	*************************************************************************************/
@@ -89,12 +97,12 @@
 		float: none;
 		clear: both;
 	}
-	
+
 	/* header */
 	#header {
 		height: auto !important;
 	}
-	
+
 	/* header widget */
 	.header-widget {
 		position: static !important;
@@ -106,7 +114,7 @@
 	.header-widget .widget {
 		margin: 0 0 10px;
 	}
-	
+
 	/* social widget */
 	#header .social-widget {
 		padding: 5px 0 0;
@@ -125,7 +133,7 @@
 	#header #searchform input#s:focus {
 		width: 150px;
 	}
-	
+
 	/* site logo */
 	#site-logo {
 		padding: 15px 100px 10px 0;
@@ -166,7 +174,7 @@
 }
 
 @media screen and (max-width: 600px) {
-	
+
 	/************************************************************************************
 	LAYOUTS
 	*************************************************************************************/
@@ -185,7 +193,7 @@
 		margin-left: 0;
 		float: none;
 	}
-	
+
 }
 
 @media screen and (max-width: 480px) {
@@ -218,13 +226,13 @@
 		padding-right: 90px;
 		width: auto;
 	}
-	
+
 	/* site description */
 	#site-description {
 		text-align: left;
 		margin: 0 0 10px;
 	}
-	
+
 	/* social widget */
 	.social-widget {
 		position: static !important;
@@ -233,7 +241,7 @@
 		overflow:hidden;
 		padding: 0;
 	}
-	
+
 	/* top nav */
 	#top-nav {
 		padding-right: 0;
@@ -350,7 +358,7 @@
 		content: "\f002";
 		font-size: 19px;
 	}
-	
+
 	#header #searchform {
 		clear: both;
 		width: auto;
@@ -387,7 +395,7 @@
 		margin-left: 0 !important;
 		float: none !important;
 	}
-	
+
 	/* post title */
 	.post-title {
 		font-size: 2em !important;
@@ -402,7 +410,7 @@
 		clear: both;
 		margin-bottom: 10px;
 	}
-	
+
 	/************************************************************************************
 	COMMENTS
 	*************************************************************************************/
@@ -433,7 +441,7 @@
 	.footer-nav {
 		padding: 0;
 	}
-	
+
 	/************************************************************************************
 	WOOCOMMERCE SUPPORT
 	*************************************************************************************/

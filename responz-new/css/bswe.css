@@ -7,13 +7,13 @@
 @font-face {
   font-family: "SkinBones";
   src: url('/fonts/normal');
-  src: url('/fonts/normal?#iefix') format('embedded-opentype'), url(/wp-content/themes/responz/fonts/skin__bones-webfont.woff) format('woff'), url(/wp-content/themes/responz/fonts/skin__bones-webfont.ttf) format('truetype'), url(/wp-content/themes/responz/fonts/skin__bones-webfont.svg) format('svg'), url(/wp-content/themes/responz/fonts/skin__bones-webfont.eot) format('embedded-opentype');
+  src: url('/fonts/normal?#iefix') format('embedded-opentype'), url(/wp-content/themes/responz-new/fonts/skin__bones-webfont.woff) format('woff'), url(/wp-content/themes/responz-new/fonts/skin__bones-webfont.ttf) format('truetype'), url(/wp-content/themes/responz-new/fonts/skin__bones-webfont.svg) format('svg'), url(/wp-content/themes/responz-new/fonts/skin__bones-webfont.eot) format('embedded-opentype');
   font-weight: normal;
 }
 @font-face {
   font-family: "Cabin";
   src: url('/fonts/normal');
-  src: url('/fonts/normal?#iefix') format('embedded-opentype'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.woff) format('woff'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.ttf) format('truetype'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.svg) format('svg'), url(/wp-content/themes/responz/fonts/cabin-regular-webfont.eot) format('embedded-opentype');
+  src: url('/fonts/normal?#iefix') format('embedded-opentype'), url(/wp-content/themes/responz-new/fonts/cabin-regular-webfont.woff) format('woff'), url(/wp-content/themes/responz-new/fonts/cabin-regular-webfont.ttf) format('truetype'), url(/wp-content/themes/responz-new/fonts/cabin-regular-webfont.svg) format('svg'), url(/wp-content/themes/responz-new/fonts/cabin-regular-webfont.eot) format('embedded-opentype');
   font-weight: normal;
 }
 /* line 72, ../../sass/_bswe.scss */
@@ -155,7 +155,7 @@ body #headerwrap {
 }
 /* line 152, ../../sass/_bswe.scss */
 body #headerwrap #header {
-  background-image: url("/wp-content/themes/responz/images/bswe-sax.png");
+  background-image: url("/wp-content/themes/responz-new/images/bswe-sax.png");
   background-repeat: no-repeat;
   height: 172px;
 }
