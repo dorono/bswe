@@ -9,6 +9,7 @@ $serif-font: Arapey, "Times New Roman", Times, serif;
 /* FONT COLORS */
 $default-font-color: #333;
 $default-anchor-color: $default-font-color;
+$secondary-anchor-color: #347bd2; // dark blue
 $logo-text-color: #9CCFEE;
 $tagline-color: #fff; // white
 $text-color-2: #fff; // white
@@ -74,7 +75,7 @@ body {
     font-family: $main-font;
 
     p {
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5em;
     }
 
@@ -428,7 +429,7 @@ body {
             }
 
             li {
-                font-size: 14px;
+                font-size: 16px;
             }
         }
     }
@@ -624,6 +625,14 @@ body {
                 size: 18px;
                 weight: bold;
             }
+        }
+    }
+
+    a.read-more {
+        color: $secondary-anchor-color;
+
+        &:hover {
+            color: $secondary-anchor-color;
         }
     }
 }

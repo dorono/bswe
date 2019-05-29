@@ -712,8 +712,12 @@ add_action('wp_head', 'themify_ie_standards_compliant');
 
         return $query;
     }
-
     add_filter( 'pre_get_posts', 'my_exclude_category' );
+
+    function new_excerpt_more($more) {
+        return ' <a class="read-more" href="' . get_permalink( get_the_ID() ) . '">[read more...]</a>';
+    }
+    add_filter('excerpt_more', 'new_excerpt_more');
 
 	if( ! function_exists('themify_theme_add_sidebar_alt') ) {
 		/**
