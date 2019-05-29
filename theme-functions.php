@@ -701,7 +701,19 @@ add_action('wp_head', 'themify_ie_standards_compliant');
 			'before_title' => '',
 			'after_title' => '',
 		));
-	}
+    }
+
+    // Exclude category from homepage.
+    function my_exclude_category( $query ) {
+
+        if ( $query->is_home ) {
+            $query->set( 'cat', '-49' );
+        }
+
+        return $query;
+    }
+
+    add_filter( 'pre_get_posts', 'my_exclude_category' );
 
 	if( ! function_exists('themify_theme_add_sidebar_alt') ) {
 		/**
