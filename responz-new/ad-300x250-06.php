@@ -2,13 +2,13 @@
 
 // ADS 9 & 10
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
 $Alt1 = "Reed Geek";
 $Url1 = "http://www.reedgeek.com/";
 $ad_name1 = "Reed-Geek-Black-Diamond";
 $slot_name1 = "Reed Geek Sidebar";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
 $Alt2 = "Reed Geek";
 $Url2 = "http://www.reedgeek.com/";
 $ad_name2 = "Reed-Geek-Black-Diamond";

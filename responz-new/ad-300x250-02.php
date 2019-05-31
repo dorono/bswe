@@ -1,12 +1,12 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/Wedge-Ad-300x250.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/Wedge.jpg";
 $Alt1 = "The Wedge Distribution";
 $Url1 = "https://www.thewedgedistribution.com/";
 $ad_name1 = "wedge-distribution";
 $slot_name1 = "The Wedge Distribution";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/Wedge-Ad-300x250.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/Wedge.jpg";
 $Alt2 = "The Wedge Distribution";
 $Url2 = "https://www.thewedgedistribution.com/";
 $ad_name2 = "wedge-distribution";

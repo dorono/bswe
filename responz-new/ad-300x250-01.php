@@ -1,67 +1,16 @@
-<style>
-.rando {
-  background-color: #CCC;
-  background-image:url(https://bswestage.wpengine.com/wp-content/uploads/lfcc-sheet-music-ALT-1.jpg);
-  background-size: 133%;
-  display: block;
-}
-
-.fixed-ar::before {
-  content: "";
-  float: left;
-  width: 1px;
-  margin-left: -1px;
-/*     border: 1px solid red;
- */
-}
-/* .fixed-ar::after {
-  content: "";
-  display: table;
-  clear: both;
-} */
-
-.fixed-ar-16-9::before {
-  padding-top: 56.25%;
-}
-.fixed-ar-3-2::before {
-  padding-top: 66.66%;
-}
-.fixed-ar-4-3::before {
-  padding-top: 83%;
-}
-.fixed-ar-1-1::before {
-  padding-top: 100%;
-}
-
-.width-50 {
-  display: inline-block;
-  width: %;
-}
-.width-20 {
-  display: inline-block;
-  width: 20%;
-}
-
-.width-fluid {
-    display: inline-block;
-  width: 100%;
-  max-width: 300px;
-}
-</style>
-
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/lfcc-300x250-sheet-music-ad.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/lfcc-sheet-music.jpg";
 $Alt1 = "Lightning-Fast and Crystal-Clean";
 $Url1 = "http://saxtechnique.com";
 $ad_name1 = "lfcc-wide-sidebar";
-$slot_name1 = "Lightning-Fast and Crystal-Clean 300x250 wide sidebar";
+$slot_name1 = "Lightning-Fast and Crystal-Clean wide sidebar";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/lfcc-300x250-sheet-music-boxunit-video.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/lfcc-sheet-music-video.jpg";
 $Alt2 = "Lightning-Fast and Crystal-Clean";
 $Url2 = "http://saxtechnique.com";
 $ad_name2 = "lfcc-video-still-wide-sidebar";
-$slot_name2 = "Lightning-Fast and Crystal-Clean VIDEO STILL 300x250 wide sidebar";
+$slot_name2 = "Lightning-Fast and Crystal-Clean VIDEO STILL wide sidebar";
 
 $num = mt_rand(1,2);
 
@@ -71,9 +20,7 @@ $URL = ${'Url'.$num};
 $ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
 
-
-// print "<div class=\"sidebar-boxunit boxunit\" data-boxunit-slot=\"boxunit-300x250-01\"><a href=\"".$URL."\" target=\"_blank\"
-// class=\"boxunit-banner\" data-boxunit-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
-// height=\"250\"></a></div>";
-print '<div><a href="https://www.google.com" class="rando fixed-ar fixed-ar-4-3 width-fluid"></a></div>'
+print "<div class=\"sidebar-boxunit boxunit\" data-boxunit-slot=\"boxunit-300x250-01\"><a href=\"".$URL."\" target=\"_blank\"
+class=\"boxunit-banner\" data-boxunit-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
+height=\"250\"></a></div>";
 ?>

@@ -125,7 +125,7 @@ body #body > div:first-child {
   background: #e2e2e2;
 }
 /* line 111, ../../sass/_bswe.scss */
-body #body > div:first-child .banner728 {
+body #body > div:first-child .banner-wide-box {
   margin: 0;
   max-height: 90px;
   text-align: center;
@@ -386,26 +386,26 @@ body .loops-wrapper.grid4 .post .post-title {
   clear: both;
 }
 /* line 380, ../../sass/_bswe.scss */
-body #loops-wrapper .sidebar-boxunits,
-body article .sidebar-boxunits {
+body #loops-wrapper .sidebar-boxunit,
+body article .sidebar-boxunit {
   margin-bottom: 10px;
 }
 @media screen and (min-width: 760px) {
   /* line 380, ../../sass/_bswe.scss */
-  body #loops-wrapper .sidebar-boxunits,
-  body article .sidebar-boxunits {
+  body #loops-wrapper .sidebar-boxunit,
+  body article .sidebar-boxunit {
     display: none;
   }
 }
 /* line 389, ../../sass/_bswe.scss */
-body .mobile-boxunit{
+body .mobile-boxunit-img {
   display: none;
   text-align: center;
   margin-bottom: 10px;
 }
 @media screen and (max-width: 480px) {
   /* line 389, ../../sass/_bswe.scss */
-  body .mobile-boxunit{
+  body .mobile-boxunit-img {
     display: block;
   }
 }
@@ -485,23 +485,23 @@ body #sidebar-alt h4.widgettitle {
   }
 }
 /* line 481, ../../sass/_bswe.scss */
-body .sidebar-boxunits {
+body .sidebar-boxunit {
   clear: both;
   text-align: center;
 }
 /* line 486, ../../sass/_bswe.scss */
-body .sidebar-boxunits img.desktop-tablet-boxunit-img, body .sidebar-boxunits img.mobile-boxunit-img {
+body .sidebar-boxunit img.desktop-tablet-boxunit-img, body .sidebar-boxunit img.mobile-boxunit-img {
   display: none;
 }
 @media screen and (min-width: 760px) {
   /* line 491, ../../sass/_bswe.scss */
-  body .sidebar-boxunits img.desktop-tablet-boxunit-img {
+  body .sidebar-boxunit img.desktop-tablet-boxunit-img {
     display: inline-block;
   }
 }
 @media screen and (max-width: 760px) {
   /* line 497, ../../sass/_bswe.scss */
-  body .sidebar-boxunits img.mobile-boxunit-img {
+  body .sidebar-boxunit img.mobile-boxunit-img {
     display: inline-block;
   }
 }
@@ -521,11 +521,11 @@ body .social_icons p span {
   top: 6px;
 }
 /* line 521, ../../sass/_bswe.scss */
-body .top-text-boxunit{
+body .top-text-boxunit {
   padding-bottom: 7px;
 }
 /* line 524, ../../sass/_bswe.scss */
-body .top-text-boxunita {
+body .top-text-boxunit a {
   color: #fff;
   font-style: italic;
   font-size: 14px;

@@ -2,13 +2,13 @@
 
 // ADS 5 & 6
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/BestSax_SuperJet_300x250.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/BestSax_SuperJet.jpg";
 $Alt1 = "JodyJazz - SUPER JET Alto";
 $Url1 = "http://jodyjazz.com/super-jet-alto/";
 $ad_name1 = "jodyjazz_super_jet";
 $slot_name1 = "Jody Jazz Slot 1 - 300x250";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/BestSax_PowerRing_300x250.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/BestSax_PowerRing.jpg";
 $Alt2 = "JodyJazz - POWER RING Ligature";
 $Url2 = "http://jodyjazz.com/dv-metal-sax-mouthpieces/";
 $ad_name2 = "jodyjazz_power_ring";

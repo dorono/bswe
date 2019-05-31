@@ -108,7 +108,7 @@ body {
     #body > div:first-child {
         background: $bgcolor-3;
 
-        .banner728 {
+        .banner-wide-box {
             margin: 0;
             max-height: 90px;
             text-align: center;
@@ -377,7 +377,7 @@ body {
 
     #loops-wrapper,
     article {
-        .sidebar-boxunits {
+        .sidebar-boxunit {
             margin-bottom: 10px;
 
             @media screen and (min-width: $medium) {
@@ -386,7 +386,7 @@ body {
         }
     }
 
-    .mobile-boxunit{
+    .mobile-boxunit-img {
         display: none;
         text-align: center;
         margin-bottom: 10px;
@@ -478,7 +478,7 @@ body {
         }
     }
 
-    .sidebar-boxunits {
+    .sidebar-boxunit {
         clear: both;
         text-align: center;
 

@@ -31,7 +31,7 @@
             return array;
         }
 
-        $('.sidebar-boxunits').each(function () {
+        $('.sidebar-boxunit').each(function () {
             // put all ads into an array
             adArray.push({
                 adSlot: $(this).data('boxunit-slot'),
@@ -48,11 +48,11 @@
             sourceAd;
 
         $(contentContainer).find(settings.adDivider).each(function (index) {
-            if ((index + 1) % settings.frequency === 0 && $('.widgetwrap .sidebar-boxunits').length > adNum) {
+            if ((index + 1) % settings.frequency === 0 && $('.widgetwrap .sidebar-boxunit').length > adNum) {
                 adIdentifier = shuffledAdArray[adNum].adSlot;
                 adParent = shuffledAdArray[adNum].adContainer;
 
-                currentAd = '.sidebar-boxunits[data-boxunit-slot=' + adIdentifier + ']';
+                currentAd = '.sidebar-boxunit[data-boxunit-slot=' + adIdentifier + ']';
                 sourceAd = $('#' + adParent).find(currentAd);
                 sourceAd.clone().insertAfter(contentContainer + ' '+ settings.adDivider + ':eq(' + index + ')').prepend('<div class=\'sponsored\'>Sponsored</div>');
                 sourceAd.parents('.widgetwrap').addClass('hide-mobile');
@@ -84,24 +84,4 @@
             frequency: 4
         });
     }
-
-    // slide toggle topics widget, keeping this functionality
-    // out of commission for the time-being
-    /*
-    BSWE.topicsWidget = $('.widget_taxonomy_list_widget');
-    BSWE.topicsWidgetHdr = BSWE.topicsWidget.find('h4');
-    BSWE.topicsWidget.prepend('<span class=\'open\'></span>');
-
-    BSWE.topicsWidget.on('click', 'h4, span', function() {
-        BSWE.topicsWidget.find('ul').slideToggle();
-        BSWE.topicsWidget.find('span').toggleClass('closed');
-
-        if(BSWE.topicsWidgetHdr.text() === 'Hide Topics') {
-            BSWE.topicsWidgetHdr.text('View Topics');
-        } else {
-            BSWE.topicsWidgetHdr.text('Hide Topics');
-        }
-    });
-    */
-
 })(jQuery);
