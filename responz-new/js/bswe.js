@@ -31,11 +31,11 @@
             return array;
         }
 
-        $('.sidebar-ads').each(function () {
+        $('.sidebar-boxunits').each(function () {
             // put all ads into an array
             adArray.push({
-                adSlot: $(this).data('ad-slot'),
-                adContainer: $(this).parents('.ad-container').attr('id')
+                adSlot: $(this).data('boxunit-slot'),
+                adContainer: $(this).parents('.boxunit-container').attr('id')
             });
         });
 
@@ -48,11 +48,11 @@
             sourceAd;
 
         $(contentContainer).find(settings.adDivider).each(function (index) {
-            if ((index + 1) % settings.frequency === 0 && $('.widgetwrap .sidebar-ads').length > adNum) {
+            if ((index + 1) % settings.frequency === 0 && $('.widgetwrap .sidebar-boxunits').length > adNum) {
                 adIdentifier = shuffledAdArray[adNum].adSlot;
                 adParent = shuffledAdArray[adNum].adContainer;
 
-                currentAd = '.sidebar-ads[data-ad-slot=' + adIdentifier + ']';
+                currentAd = '.sidebar-boxunits[data-boxunit-slot=' + adIdentifier + ']';
                 sourceAd = $('#' + adParent).find(currentAd);
                 sourceAd.clone().insertAfter(contentContainer + ' '+ settings.adDivider + ':eq(' + index + ')').prepend('<div class=\'sponsored\'>Sponsored</div>');
                 sourceAd.parents('.widgetwrap').addClass('hide-mobile');
@@ -108,7 +108,7 @@
 
 (function($) {
 
-  $('.ad a').on('click', function() {
+  $('.boxunita').on('click', function() {
       var label = $(this).data('slot-name');
 
       ga('send', {

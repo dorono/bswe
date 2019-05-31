@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="css/ad-iframe.css">
+<link rel="stylesheet" type="text/css" href="css/boxunit-iframe.css">
 <title>300x250</title>
 
 <style>
@@ -53,7 +53,7 @@ $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 
-print "<a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" class=\"".$class." ad-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
+print "<a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\" class=\"".$class." boxunit-banner\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a>";
 ?>
 
 <script type="text/javascript">

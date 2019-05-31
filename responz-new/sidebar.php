@@ -1,5 +1,5 @@
 <?php themify_sidebar_before(); //hook ?>
-<aside id="sidebar" class="ad-container">
+<aside id="sidebar" class="boxunit-container">
 	<?php themify_sidebar_start(); //hook ?>
 
 	<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-main') ); ?>

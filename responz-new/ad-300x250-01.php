@@ -57,7 +57,7 @@ $Url1 = "http://saxtechnique.com";
 $ad_name1 = "lfcc-wide-sidebar";
 $slot_name1 = "Lightning-Fast and Crystal-Clean 300x250 wide sidebar";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/lfcc-300x250-sheet-music-ad-video.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/lfcc-300x250-sheet-music-boxunit-video.jpg";
 $Alt2 = "Lightning-Fast and Crystal-Clean";
 $Url2 = "http://saxtechnique.com";
 $ad_name2 = "lfcc-video-still-wide-sidebar";
@@ -72,8 +72,8 @@ $ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
 
 
-// print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-01\"><a href=\"".$URL."\" target=\"_blank\"
-// class=\"ad-banner\" data-ad-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
+// print "<div class=\"sidebar-boxunit boxunit\" data-boxunit-slot=\"boxunit-300x250-01\"><a href=\"".$URL."\" target=\"_blank\"
+// class=\"boxunit-banner\" data-boxunit-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
 // height=\"250\"></a></div>";
 print '<div><a href="https://www.google.com" class="rando fixed-ar fixed-ar-4-3 width-fluid"></a></div>'
 ?>

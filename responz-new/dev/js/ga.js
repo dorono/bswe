@@ -1,6 +1,6 @@
 (function($) {
 
-  $('.ad a').on('click', function() {
+  $('.boxunita').on('click', function() {
       var label = $(this).data('slot-name');
 
       ga('send', {
