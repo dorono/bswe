@@ -108,7 +108,7 @@ body {
     #body > div:first-child {
         background: $bgcolor-3;
 
-        .banner728 {
+        .banner-wide-box {
             margin: 0;
             max-height: 90px;
             text-align: center;
@@ -377,7 +377,7 @@ body {
 
     #loops-wrapper,
     article {
-        .sidebar-ads {
+        .sidebar-boxunit {
             margin-bottom: 10px;
 
             @media screen and (min-width: $medium) {
@@ -386,7 +386,7 @@ body {
         }
     }
 
-    .mobile-ad {
+    .mobile-boxunit-img {
         display: none;
         text-align: center;
         margin-bottom: 10px;
@@ -478,23 +478,23 @@ body {
         }
     }
 
-    .sidebar-ads {
+    .sidebar-boxunit {
         clear: both;
         text-align: center;
 
         img {
-            &.desktop-tablet-ad-img,
-            &.mobile-ad-img {
+            &.desktop-tablet-boxunit-img,
+            &.mobile-boxunit-img {
                 display: none;
             }
 
-            &.desktop-tablet-ad-img {
+            &.desktop-tablet-boxunit-img {
                 @media screen and (min-width: $medium) {
                     display: inline-block;
                 }
             }
 
-            &.mobile-ad-img {
+            &.mobile-boxunit-img {
                 @media screen and (max-width: $medium) {
                     display: inline-block;
                 }
@@ -518,7 +518,7 @@ body {
         }
     }
 
-    .top-text-ad {
+    .top-text-boxunit{
       padding-bottom: 7px;
 
       a {

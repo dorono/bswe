@@ -2,13 +2,13 @@
 
 // ADS 9 & 10
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
 $Alt1 = "Reed Geek";
 $Url1 = "http://www.reedgeek.com/";
 $ad_name1 = "Reed-Geek-Black-Diamond";
 $slot_name1 = "Reed Geek Sidebar";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond-300x250.jpg";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/reedgeek-black-diamond.jpg";
 $Alt2 = "Reed Geek";
 $Url2 = "http://www.reedgeek.com/";
 $ad_name2 = "Reed-Geek-Black-Diamond";
@@ -23,6 +23,6 @@ $ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
 
 
-print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-06\"><a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"
-class=\"ad-banner\" data-ad-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
+print "<div class=\"sidebar-boxunit boxunit\" data-boxunit-slot=\"boxunit-300x250-06\"><a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"
+class=\"boxunit-banner\" data-boxunit-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\" height=\"250\"></a></div>";
 ?>
