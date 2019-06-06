@@ -88,7 +88,7 @@
 
 (function($) {
 
-  $('.boxunita').on('click', function() {
+  $('.boxunit a').on('click', function() {
       var label = $(this).data('slot-name');
 
       ga('send', {
