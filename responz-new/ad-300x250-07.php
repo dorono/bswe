@@ -22,8 +22,8 @@ $Alt = ${'Alt' .$num};
 $URL = ${'Url'.$num};
 $ad_name = ${'ad_name'.$num};
 $slot_name = ${'slot_name'.$num};
-
-print "<div class=\"sidebar-boxunit boxunit\" data-boxunit-slot=\"boxunit-300x250-07\"><a href=\"".$URL."\" rel=\"noopener noreferrer nofollow\" target=\"_blank\"
-class=\"boxunit-banner\" data-boxunit-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
+// removed no follow for retro revival only, make sure to put back for other advertisers.
+print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-300x250-07\"><a href=\"".$URL."\"  target=\"_blank\"
+class=\"ad-banner\" data-ad-name=\"".$ad_name."\" data-slot-name=\"".$slot_name."\"><img src=\"".$Image."\" alt=\"".$Alt."\" width=\"300\"
 height=\"250\"></a></div>";
 ?>

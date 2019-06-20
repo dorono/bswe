@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/ochres-robot-multiwidth";
-$Alt1 = "Ochres Music - Free Your Soul";
-$Url1 = "http://www.ochresmusic.com/";
-$class1 = "ochres-robot";
-$slot_name1 = "Ochres Music - Free Your Soul";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/margitza-alldevices-multiwidth";
+$Alt1 = "Bulletproof Saxophone Playing";
+$Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
+$class1 = "bsp-narrow-sidebar";
+$slot_name1 = "Bulletproof Saxophone Playing All Devices";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/ochres-robot-multiwidth";
-$Alt2 = "Ochres Music - Free Your Soul";
-$Url2 = "http://www.ochresmusic.com/";
-$class2 = "ochres-robot";
-$slot_name2 = "Ochres Music - Free Your Soul";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/bsp-graphicshouse-multiwidth";
+$Alt2 = "Bulletproof Saxophone Playing";
+$Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
+$class2 = "bsp-narrow-sidebar";
+$slot_name2 = "Bulletproof Saxophone Playing All Devices";
 
 $num = mt_rand(1,2);
 
