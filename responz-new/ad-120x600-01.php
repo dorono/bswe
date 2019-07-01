@@ -1,16 +1,16 @@
 <?php
 
 $Img1 = get_bloginfo('url') . "/wp-content/uploads/10mfan-innovation-multiwidth";
-$Alt1 = "Bulletproof Saxophone Playing";
-$Url1 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
-$class1 = "bsp-narrow-sidebar";
-$slot_name1 = "Bulletproof Saxophone Playing All Devices";q
+$Alt1 = "10m Fan";
+$Url1 = "https://10mfan.com/";
+$class1 = "10m-fan-narrow-sidebar";
+$slot_name1 = "10m Fan All Devices";
 
 $Img2 = get_bloginfo('url') . "/wp-content/uploads/10mfan-innovation-multiwidth";
-$Alt2 = "Bulletproof Saxophone Playing";
-$Url2 = "http://www.bestsaxophonewebsiteever.com/bulletproof-saxophone-playing/";
-$class2 = "bsp-narrow-sidebar";
-$slot_name2 = "Bulletproof Saxophone Playing All Devices";
+$Alt2 = "10m Fan";
+$Url2 = "https://10mfan.com/";
+$class2 = "10m-fan-narrow-sidebar";
+$slot_name2 = "10m Fan All Devices";
 
 $num = rand (1,2);
 
@@ -20,17 +20,9 @@ $URL = ${'Url'.$num};
 $class = ${'class'.$num};
 $slot_name = ${'slot_name'.$num};
 
-<<<<<<< HEAD
 print "<div class=\"sidebar-boxunit boxunit\" data-boxunit-slot=\"boxunit-120x600-01\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." boxunit-banner\" data-slot-name=\"".$slot_name."\" data-boxunit-name=\"".$class."\"><img src=\"".$Image."-300.jpg\"
+class=\"".$class." boxunit-banner\" data-slot-name=\"".$slot_name."\" data-boxunit-name=\"".$class."\"><img src=\"".$Image."-300.png\"
  alt=\"".$Alt."\"
 class=\"mobile-boxunit-img\"><img
-src=\"".$Image."-120.jpg\" alt=\"".$Alt."\" class=\"desktop-tablet-boxunit-img\"></a></div>";
-=======
-print "<div class=\"sidebar-ads ad\" data-ad-slot=\"ad-120x600-01\"><a href=\"".$URL."\" target=\"_blank\"
-class=\"".$class." ad-banner\" data-slot-name=\"".$slot_name."\" data-ad-name=\"".$class."\"><img src=\"".$Image."-300.png\"
- alt=\"".$Alt."\"
-class=\"mobile-ad-img\"><img
-src=\"".$Image."-120.png\" alt=\"".$Alt."\" class=\"desktop-tablet-ad-img\"></a></div>";
->>>>>>> updated with new advertiser, removed nofollow tag from retro-revival
+src=\"".$Image."-120.png\" alt=\"".$Alt."\" class=\"desktop-tablet-boxunit-img\"></a></div>";
 ?>

@@ -1,16 +1,16 @@
 <?php
 
-$Img1 = get_bloginfo('url') . "/wp-content/uploads/Wedge.jpg";
-$Alt1 = "The Wedge Distribution";
-$Url1 = "https://www.thewedgedistribution.com/";
-$ad_name1 = "wedge-distribution";
-$slot_name1 = "The Wedge Distribution";
+$Img1 = get_bloginfo('url') . "/wp-content/uploads/jlwg_300x250.jpg";
+$Alt1 = "Jazz Lessons with Giants";
+$Url1 = "http://jazzlessonswithgiants.com/";
+$ad_name1 = "jlwg-orange-ad";
+$slot_name1 = "JLWG 300x250 300x250-02.php";
 
-$Img2 = get_bloginfo('url') . "/wp-content/uploads/Wedge.jpg";
-$Alt2 = "The Wedge Distribution";
-$Url2 = "https://www.thewedgedistribution.com/";
-$ad_name2 = "wedge-distribution";
-$slot_name2 = "The Wedge Distribution";
+$Img2 = get_bloginfo('url') . "/wp-content/uploads/jlwg_300x250.jpg";
+$Alt2 = "Jazz Lessons with Giants";
+$Url2 = "http://jazzlessonswithgiants.com/";
+$ad_name2 = "jlwg-orange-ad";
+$slot_name2 = "JLWG 300x250 300x250-02.php";
 
 $num = rand (1,2);
 
