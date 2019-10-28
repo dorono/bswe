@@ -14,17 +14,17 @@ $Url2 = "http://jodyjazz.com/dv-metal-sax-mouthpieces/";
 $ad_name2 = "jodyjazz_power_ring";
 $slot_name2 = "Jody Jazz Slot 2 - 300x250";
 
-$Img3 = get_bloginfo('url') . "/wp-content/uploads/rampone.jpg";
-$Alt3 = "Rampone";
-$Url3 = "http://www.ramponecazzani-usa.com/";
-$ad_name3 = "ramponecazzani_italian_family";
-$slot_name3 = "Rampone 300x250";
+$Img3 = get_bloginfo('url') . "/wp-content/uploads/RovnerAd_reliability-sensibleprice.jpg";
+$Alt3 = "Rovner";
+$Url3 = "https://www.rovnerproducts.com/";
+$ad_name3 = "RovnerAd_reliability-sensibleprice";
+$slot_name3 = "Rovner 300x250";
 
-$Img4 = get_bloginfo('url') . "/wp-content/uploads/rampone.jpg";
-$Alt4 = "Rampone";
-$Url4 = "http://www.ramponecazzani-usa.com/";
-$ad_name4 = "ramponecazzani_italian_family";
-$slot_name4 = "Rampone 300x250";
+$Img4 = get_bloginfo('url') . "/wp-content/uploads/RovnerAd_reliability-sensibleprice.jpg";
+$Alt4 = "Rovner";
+$Url4 = "https://www.rovnerproducts.com/";
+$ad_name4 = "RovnerAd_reliability-sensibleprice";
+$slot_name4 = "Rovner 300x250";
 
 $num = mt_rand (1,4);
 

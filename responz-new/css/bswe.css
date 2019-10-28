@@ -564,30 +564,36 @@ body .writer_promo {
   background-color: #f2ee8b;
   padding: 10px;
   border: #000 1px solid;
+  margin-bottom: 10px;
 }
-/* line 637, ../../sass/_bswe.scss */
+/* line 638, ../../sass/_bswe.scss */
 body .writer_promo h2 {
   margin-top: 0;
   font-family: Cabin, Arial, sans-serif;
 }
-/* line 642, ../../sass/_bswe.scss */
+/* line 643, ../../sass/_bswe.scss */
 body .writer_promo h4 {
   margin: 0;
 }
-/* line 648, ../../sass/_bswe.scss */
+/* line 649, ../../sass/_bswe.scss */
 body .yarpp-related a {
   font-weight: normal;
 }
-/* line 652, ../../sass/_bswe.scss */
+/* line 653, ../../sass/_bswe.scss */
 body .yarpp-related legend {
   font-size: 18px;
   font-weight: bold;
 }
-/* line 660, ../../sass/_bswe.scss */
+/* line 661, ../../sass/_bswe.scss */
 body a.read-more {
   color: #347bd2;
 }
-/* line 663, ../../sass/_bswe.scss */
+/* line 664, ../../sass/_bswe.scss */
 body a.read-more:hover {
   color: #347bd2;
+}
+
+/* line 671, ../../sass/_bswe.scss */
+.simple-banner .simple-banner-text {
+  padding: 0;
 }
