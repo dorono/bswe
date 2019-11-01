@@ -4,7 +4,7 @@
 
 $Img1 = get_bloginfo('url') . "/wp-content/uploads/marc-jean-hypes.jpg";
 $Alt1 = "Sax Dakota";
-$Url1 = "http://www.musiquedemarc.com/En/default.asp?pg=lig";
+$Url1 = "http://www.musiquedemarc.com";
 $ad_name1 = "marcjean_468x60";
 $slot_name1 = "Ligature II by Marc Jean";
 
