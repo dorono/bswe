@@ -564,7 +564,7 @@ body .writer_promo {
   background-color: #f2ee8b;
   padding: 10px;
   border: #000 1px solid;
-  margin-bottom: 10px;
+  margin: 10px 0;
 }
 /* line 638, ../../sass/_bswe.scss */
 body .writer_promo h2 {

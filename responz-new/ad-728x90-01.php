@@ -1,17 +1,17 @@
 <div class="banner-wide-box boxunit">
   <?php
 
-  $Img1 = "http://www.bestsaxophonewebsiteever.com/wp-content/uploads/robertos-only-the-best.jpg";
+  $Img1 = "https://www.bestsaxophonewebsiteever.com/wp-content/uploads/robertos-consistent-728x90-v2.jpg";
   $Alt1 = "Roberto's Winds";
   $Url1 = "https://www.robertoswinds.com/";
   $class1 = "robertos_winds_wide_rect";
-  $gaEventLabel1 = "Robertos Winds - Only the Best";
+  $gaEventLabel1 = "Robertos Winds - Consistent Character and Power";
 
-  $Img2 = "http://www.bestsaxophonewebsiteever.com/wp-content/uploads/robertos-only-the-best.jpg";
+  $Img2 = "https://www.bestsaxophonewebsiteever.com/wp-content/uploads/robertos-tim-price-728x90-v2.jpg";
   $Alt2 = "Roberto's Winds";
   $Url2 = "https://www.robertoswinds.com/";
   $class2 = "robertos_winds_wide_rect";
-  $gaEventLabel2 = "Robertos Winds - Only the Best";
+  $gaEventLabel2 = "Robertos Winds - Tim Price";
 
   $num = mt_rand (1,2);
 
